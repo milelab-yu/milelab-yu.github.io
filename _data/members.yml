@@ -11,18 +11,12 @@ en:
     photo_alt: "Euijin Jung"
     bio:
       - >-
-        Euijin Jung is an Assistant Professor in the School of Computer Science and
-        Engineering at Yeungnam University, where he leads MILE Lab. He works on
-        machine learning for medical data — brain signals, medical images, and the
-        clinical text that accompanies them — with an emphasis on representations
-        that hold up across modalities, subjects, and sites when labelled data is
-        scarce.
-      - >-
-        Before joining Yeungnam University he was a postdoctoral researcher at the
-        BRAIN Lab, Division of Intelligent Robot, DGIST, working with Prof. Jinung An
-        on multimodal EEG–fNIRS foundation models and on EEG-based pain assessment.
-        He received his Ph.D. and M.S. from DGIST, and was advised by
-        Prof. Sang Hyun Park during his doctoral study.
+        I am an Assistant Professor in the School of Computer Science and Engineering
+        at Yeungnam University, where I lead MILE Lab. Before this, I spent three years
+        as a Postdoctoral Researcher in the Division of Intelligent Robot at DGIST
+        working with Prof. Jinung An (8/2023–2026). I obtained my Ph.D. from DGIST in
+        2023 under the supervision of Prof. Sang Hyun Park, my M.S. from DGIST in 2019,
+        and my B.S. from Korea University of Technology and Education.
     career:
       - when: "2026 –"
         what: "Assistant Professor, School of Computer Science and Engineering, Yeungnam University"
@@ -45,15 +39,11 @@ ko:
     photo_alt: "정의진"
     bio:
       - >-
-        영남대학교 컴퓨터학부 조교수로 MILE Lab을 이끌고 있습니다. 뇌신호와 의료영상,
-        그리고 이를 둘러싼 임상 텍스트를 다루는 기계학습을 연구합니다. 레이블이 넉넉하지
-        않은 상황에서도 모달리티와 피험자, 기관을 넘어 통하는 표현을 학습하는 데
-        중점을 두고 있습니다.
-      - >-
-        영남대학교에 부임하기 전에는 DGIST 지능형로봇연구부 BRAIN Lab에서 박사후연구원으로
-        재직하며 안진웅(Jinung An) 교수와 함께 멀티모달 EEG–fNIRS foundation model과
-        뇌파 기반 통증 평가를 연구했습니다. DGIST에서 박사·석사 학위를 받았고,
-        박사과정은 박상현(Sang Hyun Park) 교수의 지도를 받았습니다.
+        영남대학교 컴퓨터학부 조교수로 재직하며 MILE Lab을 이끌고 있습니다. 그 전에는
+        DGIST 지능형로봇연구부에서 안진웅 교수님과 함께 3년간 박사후연구원으로
+        일했습니다(2023.08–2026). 2023년 DGIST에서 박상현 교수님 지도로 박사학위를,
+        2019년 같은 대학에서 석사학위를 받았고, 학사는 한국기술교육대학교에서
+        마쳤습니다.
     career:
       - when: "2026 –"
         what: "영남대학교 컴퓨터학부 조교수"
