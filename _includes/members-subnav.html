@@ -1,0 +1,8 @@
+{%- assign L = site.data.i18n[page.lang] -%}
+{%- assign base = '/members/' -%}
+{%- if page.lang == 'ko' %}{% assign base = '/ko/members/' %}{% endif -%}
+<nav class="sub-nav" aria-label="{{ L.members_nav }}">
+  <a href="{{ base | append: 'principal-investigator/' | relative_url }}"{% if page.ref == 'members-pi' %} aria-current="page"{% endif %}>{{ L.principal_investigator }}</a>
+  <a href="{{ base | append: 'lab-members/' | relative_url }}"{% if page.ref == 'members-lab' %} aria-current="page"{% endif %}>{{ L.lab_members }}</a>
+  <a href="{{ base | append: 'alumni/' | relative_url }}"{% if page.ref == 'members-alumni' %} aria-current="page"{% endif %}>{{ L.alumni }}</a>
+</nav>

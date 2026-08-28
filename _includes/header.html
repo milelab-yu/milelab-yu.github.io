@@ -42,7 +42,7 @@
   <nav class="primary-nav" id="primary-nav" aria-label="{{ L.primary_nav }}">
     <div class="wrap">
       {%- for item in site.data.nav[page.lang] %}
-      <a href="{{ item.url | relative_url }}"{% if item.ref == page.ref %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      <a href="{{ item.url | relative_url }}"{% assign navroot = item.ref | split: "-" | first %}{% assign pageroot = page.ref | split: "-" | first %}{% if navroot == pageroot %} aria-current="page"{% endif %}>{{ item.label }}</a>
       {%- endfor %}
     </div>
   </nav>

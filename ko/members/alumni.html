@@ -1,0 +1,27 @@
+---
+layout: page
+lang: ko
+ref: members-alumni
+permalink: /ko/members/alumni/
+title: "졸업생"
+description: "MILE Lab 졸업생 목록."
+---
+{%- assign L = site.data.i18n[page.lang] -%}
+{%- assign M = site.data.members[page.lang] -%}
+{% include members-subnav.html %}
+
+<section class="section">
+  {%- if M.alumni and M.alumni.size > 0 %}
+  <ul class="timeline">
+    {%- for a in M.alumni %}
+    <li><span class="when">{{ a.when }}</span>
+      <div>{{ a.name }}{% if a.note %}<div class="pub-note">{{ a.note }}</div>{% endif %}</div></li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <div class="empty-state">
+    <strong>{{ L.empty_alumni }}</strong>
+    {{ L.empty_alumni_body }}
+  </div>
+  {%- endif %}
+</section>

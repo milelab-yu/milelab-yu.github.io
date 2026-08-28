@@ -1,0 +1,36 @@
+---
+layout: page
+lang: en
+ref: members-lab
+permalink: /members/lab-members/
+title: "Lab members"
+description: "MILE Lab members at Yeungnam University. The lab opened in 2026 and is recruiting its first students."
+---
+{%- assign L = site.data.i18n[page.lang] -%}
+{%- assign M = site.data.members[page.lang] -%}
+{% include members-subnav.html %}
+
+<section class="section">
+  {%- if M.members and M.members.size > 0 %}
+  <div class="grid cols-3">
+    {%- for m in M.members %}
+    <article class="card">
+      {%- if m.photo %}<img class="member-photo" src="{{ m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy">{% endif %}
+      {%- if m.role %}<p class="kicker">{{ m.role }}</p>{% endif %}
+      <h3>{{ m.name }}</h3>
+      {%- if m.note %}<p>{{ m.note }}</p>{% endif %}
+      {%- if m.email %}<p><a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    </article>
+    {%- endfor %}
+  </div>
+  {%- else %}
+  <div class="empty-state">
+    <strong>{{ L.empty_members }}</strong>
+    {{ L.empty_members_body }}
+  </div>
+  <p class="cta">
+    <a class="btn" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <a class="btn ghost" href="{{ L.contact_url | relative_url }}">{{ L.contact }}</a>
+  </p>
+  {%- endif %}
+</section>

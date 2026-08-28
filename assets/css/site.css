@@ -368,3 +368,19 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
   .course-meta { grid-template-columns: 1fr; gap: 0; }
   .course-meta dt { margin-top: 6px; font-size: 0.8rem; }
 }
+
+/* ===== 하위 내비 (Members) =============================================== */
+.sub-nav { display: flex; gap: 4px; flex-wrap: wrap; margin: 0 0 8px; }
+.sub-nav a {
+  font-size: 0.88rem; text-decoration: none; color: var(--muted);
+  padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line);
+}
+.sub-nav a:hover { color: var(--fg); border-color: var(--muted); }
+.sub-nav a[aria-current="page"] {
+  color: var(--on-navy); background: var(--brand-navy); border-color: var(--brand-navy);
+}
+:root[data-theme="dark"] .sub-nav a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: #04121f; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .sub-nav a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: #04121f; }
+}
+.member-photo { border-radius: 8px; margin-bottom: 10px; width: 100%; display: block; }

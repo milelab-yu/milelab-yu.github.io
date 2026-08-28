@@ -1,7 +1,7 @@
 en:
   - { ref: home,         label: "Home",         url: "/" }
   - { ref: news,         label: "News",         url: "/news/" }
-  - { ref: members,      label: "Members",      url: "/members/" }
+  - { ref: members-pi,   label: "Members",      url: "/members/principal-investigator/" }
   - { ref: research,     label: "Research",     url: "/research/" }
   - { ref: publications, label: "Publications", url: "/publications/" }
   - { ref: photos,       label: "Photos",       url: "/photos/" }
@@ -10,7 +10,7 @@ en:
 ko:
   - { ref: home,         label: "홈",     url: "/ko/" }
   - { ref: news,         label: "소식",   url: "/ko/news/" }
-  - { ref: members,      label: "멤버", url: "/ko/members/" }
+  - { ref: members-pi,   label: "멤버",   url: "/ko/members/principal-investigator/" }
   - { ref: research,     label: "연구",   url: "/ko/research/" }
   - { ref: publications, label: "논문",   url: "/ko/publications/" }
   - { ref: photos,       label: "사진",   url: "/ko/photos/" }

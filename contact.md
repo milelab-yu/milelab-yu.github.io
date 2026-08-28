@@ -56,6 +56,6 @@ intro: "Email is the most reliable way to reach us."
   </p>
   <p>
     <a class="btn" href="mailto:{{ site.email }}">{{ site.email }}</a>
-    <a class="btn ghost" href="{{ '/members/' | relative_url }}">{{ L.join_us }}</a>
+    <a class="btn ghost" href="{{ '/members/lab-members/' | relative_url }}">{{ L.join_us }}</a>
   </p>
 </section>

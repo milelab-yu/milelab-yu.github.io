@@ -54,6 +54,6 @@ intro: "이메일로 연락 주시는 것이 가장 확실합니다."
   </p>
   <p>
     <a class="btn" href="mailto:{{ site.email }}">{{ site.email }}</a>
-    <a class="btn ghost" href="{{ '/ko/members/' | relative_url }}">{{ L.join_us }}</a>
+    <a class="btn ghost" href="{{ '/ko/members/lab-members/' | relative_url }}">{{ L.join_us }}</a>
   </p>
 </section>

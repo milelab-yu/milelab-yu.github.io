@@ -1,0 +1,63 @@
+---
+layout: page
+lang: ko
+ref: members-pi
+permalink: /ko/members/principal-investigator/
+title: "지도교수"
+intro: "정의진, 영남대학교 컴퓨터학부 조교수."
+description: "MILE Lab 지도교수 정의진 — 영남대학교 컴퓨터학부 조교수. 학력·경력·수상 내역."
+---
+{%- assign L = site.data.i18n[page.lang] -%}
+{%- assign pi = site.data.members[page.lang].pi -%}
+{% include members-subnav.html %}
+
+<section class="section">
+  <div class="person">
+    <div class="portrait">
+      <img src="{{ pi.photo | relative_url }}" alt="{{ pi.photo_alt }}" width="425" height="567">
+    </div>
+    <div class="bio">
+      <h2>{{ pi.name }}</h2>
+      <p class="role">{{ pi.role_line }}</p>
+      {%- for para in pi.bio %}
+      <p>{{ para }}</p>
+      {%- endfor %}
+      <dl class="dl-grid">
+        <dt>{{ L.email }}</dt>
+        <dd><a href="mailto:{{ pi.email }}">{{ pi.email }}</a></dd>
+        <dt>{{ L.office }}</dt>
+        <dd>{{ L.office_room }}</dd>
+        <dt>{{ L.links }}</dt>
+        <dd>
+          <a href="{{ pi.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a> &middot;
+          <a href="{{ pi.links.github }}" target="_blank" rel="noopener">GitHub</a> &middot;
+          <a href="{{ pi.links.cv | relative_url }}">{{ L.cv }}</a>
+        </dd>
+      </dl>
+    </div>
+  </div>
+
+  <h3>{{ L.education }}</h3>
+  <ul class="timeline">
+    {%- for item in pi.education %}
+    <li><span class="when">{{ item.when }}</span>
+      <div>{{ item.what }}{% if item.note %}<div class="pub-note">{{ item.note }}</div>{% endif %}</div></li>
+    {%- endfor %}
+  </ul>
+
+  <h3>{{ L.positions }}</h3>
+  <ul class="timeline">
+    {%- for item in pi.positions %}
+    <li><span class="when">{{ item.when }}</span>
+      <div>{{ item.what }}{% if item.note %}<div class="pub-note">{{ item.note }}</div>{% endif %}</div></li>
+    {%- endfor %}
+  </ul>
+
+  <h3>{{ L.awards }}</h3>
+  <ul class="timeline">
+    {%- for item in pi.awards %}
+    <li><span class="when">{{ item.when }}</span>
+      <div>{{ item.what }}{% if item.note %}<div class="pub-note">{{ item.note }}</div>{% endif %}</div></li>
+    {%- endfor %}
+  </ul>
+</section>
