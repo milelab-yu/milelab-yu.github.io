@@ -1,0 +1,18 @@
+en:
+  - { ref: home,         label: "Home",         url: "/" }
+  - { ref: news,         label: "News",         url: "/news/" }
+  - { ref: members,      label: "Members",      url: "/members/" }
+  - { ref: research,     label: "Research",     url: "/research/" }
+  - { ref: publications, label: "Publications", url: "/publications/" }
+  - { ref: photos,       label: "Photos",       url: "/photos/" }
+  - { ref: teaching,     label: "Teaching",     url: "/teaching/" }
+  - { ref: contact,      label: "Contact",      url: "/contact/" }
+ko:
+  - { ref: home,         label: "홈",     url: "/ko/" }
+  - { ref: news,         label: "소식",   url: "/ko/news/" }
+  - { ref: members,      label: "구성원", url: "/ko/members/" }
+  - { ref: research,     label: "연구",   url: "/ko/research/" }
+  - { ref: publications, label: "논문",   url: "/ko/publications/" }
+  - { ref: photos,       label: "사진",   url: "/ko/photos/" }
+  - { ref: teaching,     label: "강의",   url: "/ko/teaching/" }
+  - { ref: contact,      label: "연락처", url: "/ko/contact/" }

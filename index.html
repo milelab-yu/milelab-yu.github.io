@@ -1,0 +1,94 @@
+---
+layout: default
+lang: en
+ref: home
+permalink: /
+title: null
+description: "Medical Intelligence & Learning Lab at Yeungnam University — foundation models for medical images, brain signals, and clinical text."
+---
+{%- assign L = site.data.i18n.en -%}
+
+<section class="hero">
+  <div class="wrap">
+    <h1 class="tagline">Toward <span class="accent">general medical intelligence</span> across multi-modality</h1>
+    <p class="lede">{{ L.tagline_lede }}</p>
+    <p class="cta">
+      <a class="btn" href="{{ '/research/' | relative_url }}">{{ L.research_areas }}</a>
+      <a class="btn ghost" href="{{ '/members/' | relative_url }}">{{ L.join_us }}</a>
+    </p>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <section class="section">
+    <h2>{{ L.about_us }}</h2>
+    <p>
+      MILE Lab is part of the
+      <a href="{{ L.dept_url }}" target="_blank" rel="noopener">School of Computer Science and Engineering</a>
+      at Yeungnam University. We work on learning representations that hold up
+      across modalities — MRI, PET, EEG, fNIRS — and across the subjects,
+      sites and label budgets that make medical machine learning hard in practice.
+    </p>
+    <p>
+      Our recent work spans multimodal brain-signal foundation models,
+      cross-modality image synthesis, and label-efficient learning under noisy
+      or subjective annotation. The lab opened in 2026 and is recruiting its
+      first students.
+    </p>
+  </section>
+
+  {%- assign areas = site.data.research.en -%}
+  {%- if areas and areas.size > 0 %}
+  <section class="section">
+    <div class="section-head">
+      <h2>{{ L.research_areas }}</h2>
+      <a class="section-more" href="{{ '/research/' | relative_url }}">{{ L.view_all }} &rarr;</a>
+    </div>
+    <div class="grid cols-3">
+      {%- for a in areas limit: 6 %}
+      <article class="card">
+        <h3>{{ a.title }}</h3>
+        <p>{{ a.summary | strip_html | truncate: 150 }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- assign news = site.data.news.en -%}
+  {%- if news and news.size > 0 %}
+  <section class="section">
+    <div class="section-head">
+      <h2>{{ L.latest_news }}</h2>
+      <a class="section-more" href="{{ '/news/' | relative_url }}">{{ L.all_news }} &rarr;</a>
+    </div>
+    <ul class="news-list">
+      {%- for n in news limit: 4 %}
+      <li>
+        <time datetime="{{ n.date }}">{{ n.date | date: "%b %-d, %Y" }}</time>
+        <div class="news-body">
+          <h3>{{ n.title }}</h3>
+          <p>{{ n.body | strip_html | truncate: 180 }}</p>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  <section class="section">
+    <h2>{{ L.join_us }}</h2>
+    <p>
+      We are looking for undergraduate researchers and graduate students
+      interested in medical AI, brain–computer interfaces, and generative
+      models. Background in deep learning is welcome but not required — a
+      willingness to read papers carefully and write careful code matters more.
+    </p>
+    <p class="cta">
+      <a class="btn" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a class="btn ghost" href="{{ '/contact/' | relative_url }}">{{ L.contact }}</a>
+    </p>
+  </section>
+
+</div>

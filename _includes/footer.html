@@ -1,0 +1,36 @@
+{%- assign L = site.data.i18n[page.lang] -%}
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="mark-box">{% include partials/mark.html %}</span>
+        <div>
+          <strong>{{ L.lab_name }}</strong>
+          <p>{{ L.lab_full }}</p>
+          <p>{{ L.address }}</p>
+          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        </div>
+      </div>
+
+      <div class="footer-affiliation">
+        <a class="yu-mark" href="{{ L.yu_url }}" target="_blank" rel="noopener"
+           aria-label="{{ L.yu }}">
+          <img class="yu-light" src="{{ '/assets/logo/yu-logo.svg' | relative_url }}" alt="{{ L.yu }}" width="298" height="57">
+          <img class="yu-dark"  src="{{ '/assets/logo/yu-logo-white.svg' | relative_url }}" alt="" aria-hidden="true" width="298" height="57">
+        </a>
+        <p class="affil-lines">
+          <a href="{{ L.dept_url }}" target="_blank" rel="noopener">{{ L.dept }}</a>
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="{{ L.footer_nav }}">
+        {%- for item in site.data.nav[page.lang] %}
+        <a href="{{ item.url | relative_url }}">{{ item.label }}</a>
+        {%- endfor %}
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ L.lab_name }}. {{ L.rights }}</p>
+    </div>
+  </div>
+</footer>

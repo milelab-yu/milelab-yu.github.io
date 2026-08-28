@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.default_lang }}" data-theme-init>
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <main id="main">{{ content }}</main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</body>
+</html>

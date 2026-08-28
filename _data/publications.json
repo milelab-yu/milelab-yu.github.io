@@ -1,0 +1,518 @@
+{
+  "journal": [
+    {
+      "key": "jung2026pain",
+      "type": "journal",
+      "abbr": "TNSRE",
+      "title": "EEG-based Multi-Level Pain Classification via Sample Selection to Mitigate Subjective Label Bias",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Jun",
+          "first": "Sung Chan",
+          "display": "Sung Chan Jun"
+        },
+        {
+          "last": "An",
+          "first": "Jinung",
+          "display": "Jinung An"
+        }
+      ],
+      "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+      "volume": "34",
+      "number": "",
+      "pages": "2480--2490",
+      "year": 2026,
+      "doi": "10.1109/TNSRE.2026.3692232",
+      "code": "https://github.com/EuijinMisp/EEG-based-Pain-Classification-via-Sample-Selection-to-Mitigate-Subjective-Label-Bias",
+      "url": "",
+      "note": "IF 5.2, ranked 4th/175 in Rehabilitation",
+      "selected": true
+    },
+    {
+      "key": "jung2025efrm",
+      "type": "journal",
+      "abbr": "CBM",
+      "title": "EFRM: A Multimodal EEG--fNIRS Representation-learning Model for Few-Shot Brain-Signal Classification",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "An",
+          "first": "Jinung",
+          "display": "Jinung An"
+        }
+      ],
+      "venue": "Computers in Biology and Medicine",
+      "volume": "199",
+      "number": "",
+      "pages": "111292",
+      "year": 2025,
+      "doi": "10.1016/j.compbiomed.2025.111292",
+      "code": "https://github.com/EuijinMisp/EFRM-A-Multimodal-EEG-fNIRS-Representation-learning-Model",
+      "url": "",
+      "note": "IF 6.3, ranked 7th/107 in Biology",
+      "selected": true
+    },
+    {
+      "key": "jung2024petmr",
+      "type": "journal",
+      "abbr": "Spine J.",
+      "title": "Generation of Synthetic PET/MR Fusion Images from MR Images using a Combination of Generative Adversarial Networks and Conditional Denoising Diffusion Probabilistic Models based on Simultaneous 18F-FDG PET/MR Image Data of Pyogenic Spondylodiscitis",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Kong",
+          "first": "Eunjung",
+          "display": "Eunjung Kong"
+        },
+        {
+          "last": "Yu",
+          "first": "Dongwoo",
+          "display": "Dongwoo Yu"
+        },
+        {
+          "last": "Yang",
+          "first": "Heesung",
+          "display": "Heesung Yang"
+        },
+        {
+          "last": "Chicontwe",
+          "first": "Philip",
+          "display": "Philip Chicontwe"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        },
+        {
+          "last": "Jeon",
+          "first": "Ikchan",
+          "display": "Ikchan Jeon"
+        }
+      ],
+      "venue": "The Spine Journal",
+      "volume": "24",
+      "number": "8",
+      "pages": "1467--1477",
+      "year": 2024,
+      "doi": "10.1016/j.spinee.2024.04.007",
+      "code": "",
+      "url": "",
+      "note": "IF 4.9, ranked 35th/277 in Clinical Neurology",
+      "selected": false
+    },
+    {
+      "key": "jung2023cgan",
+      "type": "journal",
+      "abbr": "Pattern Recognit.",
+      "title": "Conditional GAN with 3D Discriminator for MRI Generation of Alzheimer's Disease Progression",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Luna",
+          "first": "Miguel",
+          "display": "Miguel Luna"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "Pattern Recognition",
+      "volume": "133",
+      "number": "",
+      "pages": "109061",
+      "year": 2023,
+      "doi": "10.1016/j.patcog.2022.109061",
+      "code": "https://github.com/EuijinMisp/ADE-synthesizer",
+      "url": "",
+      "note": "IF 7.5, ranked 9th/227 in Artificial Intelligence",
+      "selected": true
+    },
+    {
+      "key": "jung2019pvs",
+      "type": "journal",
+      "abbr": "IEEE Access",
+      "title": "Enhancement of Perivascular Spaces using Densely Connected Deep Convolutional Neural Network",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Chikontwe",
+          "first": "Philip",
+          "display": "Philip Chikontwe"
+        },
+        {
+          "last": "Zong",
+          "first": "Xiaopeng",
+          "display": "Xiaopeng Zong"
+        },
+        {
+          "last": "Lin",
+          "first": "Weili",
+          "display": "Weili Lin"
+        },
+        {
+          "last": "Shen",
+          "first": "Dinggang",
+          "display": "Dinggang Shen"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "IEEE Access",
+      "volume": "7",
+      "number": "",
+      "pages": "18382--18391",
+      "year": 2019,
+      "doi": "10.1109/ACCESS.2019.2896911",
+      "code": "https://github.com/EuijinMisp/Enhancement-of-Perivascular-Spaces-Using-Densely-Connected-Deep-Convolutional-Neural-Network.git",
+      "url": "",
+      "note": "IF 3.7",
+      "selected": false
+    }
+  ],
+  "conference": [
+    {
+      "key": "jung2025fnirs",
+      "type": "conference",
+      "abbr": "BCI",
+      "title": "fNIRS Foundation Model for Few-Shot based fNIRS Classification",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Lee",
+          "first": "Hyunmin",
+          "display": "Hyunmin Lee"
+        },
+        {
+          "last": "An",
+          "first": "Jinung",
+          "display": "Jinung An"
+        }
+      ],
+      "venue": "13th International Winter Conference on Brain-Computer Interface (BCI)",
+      "volume": "",
+      "number": "",
+      "pages": "1--4",
+      "year": 2025,
+      "doi": "",
+      "code": "",
+      "url": "",
+      "note": "",
+      "selected": false
+    },
+    {
+      "key": "jung2021attn",
+      "type": "conference",
+      "abbr": "MICCAI",
+      "title": "Conditional GAN with an Attention-based Generator and a 3D Discriminator for 3D Medical Image Generation",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Luna",
+          "first": "Miguel",
+          "display": "Miguel Luna"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "Medical Image Computing and Computer Assisted Intervention (MICCAI)",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "year": 2021,
+      "doi": "",
+      "code": "",
+      "url": "",
+      "note": "30% acceptance rate",
+      "selected": false
+    },
+    {
+      "key": "won2021lowdose",
+      "type": "conference",
+      "abbr": "MICCAI-W",
+      "title": "Low-Dose CT Denoising Using Pseudo-CT Image Pairs",
+      "authors": [
+        {
+          "last": "Won",
+          "first": "Dongkyu",
+          "display": "Dongkyu Won"
+        },
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "An",
+          "first": "Sion",
+          "display": "Sion An"
+        },
+        {
+          "last": "Chikontwe",
+          "first": "Philip",
+          "display": "Philip Chikontwe"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "PRIME Workshop, MICCAI",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "year": 2021,
+      "doi": "",
+      "code": "",
+      "url": "",
+      "note": "",
+      "selected": false
+    },
+    {
+      "key": "jung2020ipiu",
+      "type": "conference",
+      "abbr": "IPIU",
+      "title": "Conditional Generative Adversarial Network for 3D Medical Image Generation",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Luna",
+          "first": "Miguel",
+          "display": "Miguel Luna"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "Workshop on Image Processing and Image Understanding (IPIU)",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "year": 2020,
+      "doi": "",
+      "code": "",
+      "url": "",
+      "note": "",
+      "selected": false
+    },
+    {
+      "key": "jung2020cgan",
+      "type": "conference",
+      "abbr": "MICCAI-W",
+      "title": "Conditional Generative Adversarial Network for Predicting 3D Medical Images Affected by Alzheimer's Disease",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Luna",
+          "first": "Miguel",
+          "display": "Miguel Luna"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "PRIME Workshop, MICCAI",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "year": 2020,
+      "doi": "",
+      "code": "",
+      "url": "",
+      "note": "",
+      "selected": false
+    },
+    {
+      "key": "lee2019oct",
+      "type": "conference",
+      "abbr": "IPIU",
+      "title": "Feature Extraction in Optical Coherence Tomography Images for Eye Diseases Using Class Activation Maps",
+      "authors": [
+        {
+          "last": "Lee",
+          "first": "Gyeongmin",
+          "display": "Gyeongmin Lee"
+        },
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "Workshop on Image Processing and Image Understanding (IPIU)",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "year": 2019,
+      "doi": "",
+      "code": "",
+      "url": "",
+      "note": "",
+      "selected": false
+    },
+    {
+      "key": "luna2018wm",
+      "type": "conference",
+      "abbr": "IPIU",
+      "title": "Automatic Extraction of High-Intensity White Matter Signals in MR Images Using Deep Neural Networks",
+      "authors": [
+        {
+          "last": "Luna",
+          "first": "Miguel",
+          "display": "Miguel Luna"
+        },
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "Workshop on Image Processing and Image Understanding (IPIU)",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "year": 2018,
+      "doi": "",
+      "code": "",
+      "url": "",
+      "note": "",
+      "selected": false
+    },
+    {
+      "key": "jung2018pvs",
+      "type": "conference",
+      "abbr": "MICCAI-W",
+      "title": "Enhancement of Perivascular Spaces using a Very Deep 3D Dense Network",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Zong",
+          "first": "Xiaopeng",
+          "display": "Xiaopeng Zong"
+        },
+        {
+          "last": "Lin",
+          "first": "Weili",
+          "display": "Weili Lin"
+        },
+        {
+          "last": "Shen",
+          "first": "Dinggang",
+          "display": "Dinggang Shen"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "PRIME Workshop, MICCAI",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "year": 2018,
+      "doi": "",
+      "code": "",
+      "url": "",
+      "note": "",
+      "selected": false
+    },
+    {
+      "key": "jung2018knee",
+      "type": "conference",
+      "abbr": "IPIU",
+      "title": "Knee Cartilage Segmentation Using Semi-Supervised Convolutional Neural Networks",
+      "authors": [
+        {
+          "last": "Jung",
+          "first": "Euijin",
+          "display": "Euijin Jung"
+        },
+        {
+          "last": "Luna",
+          "first": "Miguel",
+          "display": "Miguel Luna"
+        },
+        {
+          "last": "Park",
+          "first": "Sang Hyun",
+          "display": "Sang Hyun Park"
+        }
+      ],
+      "venue": "Workshop on Image Processing and Image Understanding (IPIU)",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "year": 2018,
+      "doi": "",
+      "code": "",
+      "url": "",
+      "note": "",
+      "selected": false
+    }
+  ]
+}

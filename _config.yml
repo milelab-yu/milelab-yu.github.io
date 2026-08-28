@@ -1,0 +1,34 @@
+title: MILE Lab @ YU
+description: >-
+  Medical Intelligence & Learning Lab, School of Computer Science and
+  Engineering, Yeungnam University. Toward general medical intelligence
+  across multi-modality.
+url: "https://milelab-yu.github.io"
+baseurl: ""
+email: euijin@yu.ac.kr
+lang: en
+default_lang: en
+languages: ["en", "ko"]
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+defaults:
+  - scope: { path: "" }
+    values: { lang: "en", layout: "page" }
+  - scope: { path: "ko" }
+    values: { lang: "ko", layout: "page" }
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .jekyll-cache
+  - tools
+  - node_modules
+  - assets/logo/_source

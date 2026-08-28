@@ -1,0 +1,59 @@
+# 연구실 소식. 최신순 정렬. date는 "YYYY-MM-DD" 문자열로 고정한다.
+# 항목 필드: date, title, body, link(선택), link_label(선택)
+en:
+  - date: "2026-09-01"
+    title: "MILE Lab opens at Yeungnam University"
+    body: >-
+      The Medical Intelligence &amp; Learning Lab opened in the School of
+      Computer Science and Engineering at Yeungnam University. We are
+      recruiting undergraduate researchers as well as M.S. and Ph.D. students.
+
+  - date: "2026-05-26"
+    title: "EEG-based objective pain assessment covered by Maeil Shinmun"
+    body: >-
+      Maeil Shinmun reported on an AI method for objective pain assessment,
+      work carried out at DGIST before the lab was established. The method
+      compares the predictions of two models to keep only the samples both
+      agree on, which reduces the bias caused by individual differences in how
+      pain is reported, and it confirmed that delta-band activity over the
+      anterior temporal region tracks pain intensity closely.
+    link: "https://m.imaeil.com/page/view/2026052608120636141"
+    link_label: "Maeil Shinmun (in Korean)"
+
+  - date: "2025-11-26"
+    title: "Multimodal EEG-fNIRS foundation model covered by The Korea Economic Daily"
+    body: >-
+      The Korea Economic Daily reported on the first multimodal EEG-fNIRS
+      foundation model, work carried out at DGIST. The model was pre-trained
+      without labels on about 1,250 hours of brain signals from 918
+      participants, reaching high accuracy from a small labelled set and
+      handling unimodal and multimodal analysis within a single model.
+    link: "https://www.hankyung.com/amp/202511265733h"
+    link_label: "The Korea Economic Daily (in Korean)"
+
+ko:
+  - date: "2026-09-01"
+    title: "MILE Lab @ YU 연구실 개설"
+    body: >-
+      영남대학교 컴퓨터학부에 의료지능·학습 연구실(MILE Lab @ YU)이 문을
+      열었습니다. 학부연구생과 석사·박사과정 대학원생을 모집하고 있습니다.
+
+  - date: "2026-05-26"
+    title: "뇌파 기반 객관적 통증 평가 AI, 매일신문 보도"
+    body: >-
+      연구실 개설 이전 DGIST 재직 당시 수행한 연구가 매일신문에 소개되었습니다.
+      두 모델의 예측을 비교해 신뢰할 수 있는 표본만 선별하는 방식으로 통증 표현의
+      개인차에서 오는 편향을 줄였고, 전측두엽 델타파 활동이 통증 강도와 밀접하게
+      관련된다는 점을 확인했습니다.
+    link: "https://m.imaeil.com/page/view/2026052608120636141"
+    link_label: "매일신문 기사 보기"
+
+  - date: "2025-11-26"
+    title: "멀티모달 EEG-fNIRS 파운데이션 모델, 한국경제 보도"
+    body: >-
+      DGIST 재직 당시 수행한 연구로, 세계 최초로 구현한 멀티모달 EEG-fNIRS
+      파운데이션 모델이 한국경제에 소개되었습니다. 918명, 약 1,250시간 분량의
+      뇌신호를 레이블 없이 사전학습해 소량의 레이블만으로 높은 정확도를 얻었고,
+      단일 모달리티 분석과 멀티모달 분석을 하나의 모델에서 수행합니다.
+    link: "https://www.hankyung.com/amp/202511265733h"
+    link_label: "한국경제 기사 보기"

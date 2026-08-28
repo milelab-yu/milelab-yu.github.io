@@ -1,0 +1,50 @@
+{%- assign L = site.data.i18n[page.lang] -%}
+<a class="skip-link" href="#main">{{ L.skip_to_content }}</a>
+<header class="site-header">
+  <div class="institution-bar">
+    <div class="wrap">
+      <a class="dept-link" href="{{ L.dept_url }}" target="_blank" rel="noopener">{{ L.dept }}</a>
+      <div class="bar-actions">
+        <nav class="lang-toggle" aria-label="{{ L.language }}">
+          {%- assign alts = site.pages | where: "ref", page.ref | sort: "lang" -%}
+          {%- for p in alts -%}
+            {%- if forloop.index0 > 0 %}<span class="lang-sep" aria-hidden="true">/</span>{% endif -%}
+            <a href="{{ p.url | relative_url }}" lang="{{ p.lang }}" hreflang="{{ p.lang }}"{% if p.lang == page.lang %} aria-current="true"{% endif %}>{{ p.lang | upcase }}</a>
+          {%- endfor -%}
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle
+                aria-label="{{ L.theme_toggle }}"
+                data-label-auto="{{ L.theme_auto }}"
+                data-label-light="{{ L.theme_light }}"
+                data-label-dark="{{ L.theme_dark }}">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-text">{{ L.theme_auto }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lab-mark">
+    <div class="wrap">
+      <a class="lockup" href="{{ L.home_url | relative_url }}">
+        <span class="mark-box">{% include partials/mark.html %}</span>
+        <span class="lockup-text">
+          <span class="lab-name">{{ L.lab_name }}</span>
+          <span class="lab-full">{{ L.lab_full }}</span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+    <span class="nav-toggle-icon" aria-hidden="true"></span>
+    <span>{{ L.menu }}</span>
+  </button>
+  <nav class="primary-nav" id="primary-nav" aria-label="{{ L.primary_nav }}">
+    <div class="wrap">
+      {%- for item in site.data.nav[page.lang] %}
+      <a href="{{ item.url | relative_url }}"{% if item.ref == page.ref %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {%- endfor %}
+    </div>
+  </nav>
+</header>

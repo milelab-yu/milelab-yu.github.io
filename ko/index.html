@@ -1,0 +1,92 @@
+---
+layout: default
+lang: ko
+ref: home
+permalink: /ko/
+title: null
+description: "영남대학교 컴퓨터학부 의료지능·학습 연구실 — 의료영상·뇌신호·임상텍스트를 아우르는 파운데이션 모델을 연구합니다."
+---
+{%- assign L = site.data.i18n.ko -%}
+
+<section class="hero">
+  <div class="wrap">
+    <h1 class="tagline"><span class="accent">멀티모달리티를 아우르는</span> 범용 의료 지능을 향하여</h1>
+    <p class="lede">{{ L.tagline_lede }}</p>
+    <p class="cta">
+      <a class="btn" href="{{ '/ko/research/' | relative_url }}">{{ L.research_areas }}</a>
+      <a class="btn ghost" href="{{ '/ko/members/' | relative_url }}">{{ L.join_us }}</a>
+    </p>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <section class="section">
+    <h2>{{ L.about_us }}</h2>
+    <p>
+      MILE Lab은 영남대학교
+      <a href="{{ L.dept_url }}" target="_blank" rel="noopener">컴퓨터학부</a>
+      소속 연구실입니다. MRI·PET·EEG·fNIRS처럼 서로 다른 모달리티를 가로질러
+      성립하는 표현을 학습하는 문제, 그리고 피험자·기관·레이블 예산이 달라져도
+      성능이 유지되도록 만드는 문제를 다룹니다.
+    </p>
+    <p>
+      최근에는 멀티모달 뇌신호 파운데이션 모델, 모달리티 간 영상 합성,
+      주관적이거나 잡음이 섞인 레이블 환경에서의 학습 효율 문제를 연구해 왔습니다.
+      2026년에 개설되었으며 첫 구성원을 모집하고 있습니다.
+    </p>
+  </section>
+
+  {%- assign areas = site.data.research.ko -%}
+  {%- if areas and areas.size > 0 %}
+  <section class="section">
+    <div class="section-head">
+      <h2>{{ L.research_areas }}</h2>
+      <a class="section-more" href="{{ '/ko/research/' | relative_url }}">{{ L.view_all }} &rarr;</a>
+    </div>
+    <div class="grid cols-3">
+      {%- for a in areas limit: 6 %}
+      <article class="card">
+        <h3>{{ a.title }}</h3>
+        <p>{{ a.summary | strip_html | truncate: 150 }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- assign news = site.data.news.ko -%}
+  {%- if news and news.size > 0 %}
+  <section class="section">
+    <div class="section-head">
+      <h2>{{ L.latest_news }}</h2>
+      <a class="section-more" href="{{ '/ko/news/' | relative_url }}">{{ L.all_news }} &rarr;</a>
+    </div>
+    <ul class="news-list">
+      {%- for n in news limit: 4 %}
+      <li>
+        <time datetime="{{ n.date }}">{{ n.date | date: "%Y. %-m. %-d." }}</time>
+        <div class="news-body">
+          <h3>{{ n.title }}</h3>
+          <p>{{ n.body | strip_html | truncate: 180 }}</p>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  <section class="section">
+    <h2>{{ L.join_us }}</h2>
+    <p>
+      의료 AI, 뇌–컴퓨터 인터페이스, 생성 모델에 관심 있는 학부연구생과
+      대학원생을 찾고 있습니다. 딥러닝 경험이 있으면 좋지만 필수는 아닙니다.
+      논문을 꼼꼼히 읽고 코드를 성실히 쓰려는 태도가 더 중요합니다.
+    </p>
+    <p class="cta">
+      <a class="btn" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a class="btn ghost" href="{{ '/ko/contact/' | relative_url }}">{{ L.contact }}</a>
+    </p>
+  </section>
+
+</div>

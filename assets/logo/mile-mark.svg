@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 221 221" role="img" aria-labelledby="t"><title id="t">MILE Lab 로고</title>
+  <path fill="#062D60" fill-rule="evenodd" d="M0 0h100v100H0Z M15 17.5 L50 50.2 L85 17.5 L85 100 L15 100 Z"/>
+  <path fill="#062D60" fill-rule="evenodd" d="M121 0h100v100H121Z M159 18h22v67h-22Z"/>
+  <path fill="#062D60" fill-rule="evenodd" d="M0 121h100v100H0Z M15 137.5h21v67.5H15Z"/>
+  <path fill="#062D60" fill-rule="evenodd" d="M121 121h100v100H121Z M137.5 138h67v67h-67Z"/>
+  <rect x="36" y="188" width="47.5" height="17" fill="#00A1DF"/>
+  <rect x="137.5" y="161" width="67" height="20" fill="#00A1DF"/>
+</svg>

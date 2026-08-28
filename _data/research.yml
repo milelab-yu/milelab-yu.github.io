@@ -1,0 +1,164 @@
+# 연구 주제. UI 문자열은 _data/i18n.yml, 논문 목록은 _data/publications.json.
+en:
+  - id: brain-foundation
+    title: "Multimodal Brain-Signal Foundation Model"
+    summary: >-
+      EEG and fNIRS are recorded in large volumes, yet labelled trials stay
+      scarce and expensive. We pre-train on unlabelled recordings to learn
+      representations that are not bound to a single paradigm or a single
+      subject, then adapt them to a new task from a handful of labelled trials.
+      One model covers unimodal and multimodal input, so EEG-only, fNIRS-only,
+      and joint settings share the same backbone.
+    figure: "/assets/img/research/cibm.png"
+    figure_credit: "Figure from EFRM (Computers in Biology and Medicine, 2025), © the respective publisher."
+    keywords:
+      - "Self-supervised pre-training"
+      - "EEG"
+      - "fNIRS"
+      - "Few-shot transfer"
+      - "Foundation models"
+
+  - id: brain-signal-analysis
+    title: "Non-invasive Brain-Signal Analysis"
+    summary: >-
+      We decode cognitive and physiological states — attention, workload, pain —
+      from scalp-level EEG and fNIRS. These labels usually come from self-report
+      and carry subject-specific bias, so deciding which samples to trust during
+      training is part of the problem rather than a preprocessing detail. The
+      targets are brain–computer interfaces and clinical monitoring, where
+      invasive recording is not an option.
+    figure: "/assets/img/research/tnsre.png"
+    figure_credit: "Figure from EEG-based Multi-Level Pain Classification (IEEE TNSRE, 2026), © the respective publisher."
+    keywords:
+      - "EEG"
+      - "fNIRS"
+      - "Brain–computer interface"
+      - "Objective pain assessment"
+      - "Noisy labels"
+
+  - id: conditional-generation
+    title: "Conditional Image Generation"
+    summary: >-
+      We synthesise medical images under a specified condition — a diagnosis, a
+      time point, a severity level — while keeping anatomical structure under
+      control. The models combine adversarial and diffusion-based generators
+      with discriminators that read volumetric context instead of single slices.
+      Generated volumes support the study of disease progression and the
+      augmentation of small training sets.
+    figure: "/assets/img/research/pattern_recognition.png"
+    figure_credit: "Figure from Conditional GAN with 3D Discriminator (Pattern Recognition, 2023), © the respective publisher."
+    keywords:
+      - "Generative adversarial networks"
+      - "Diffusion models"
+      - "3D medical imaging"
+      - "Controllable synthesis"
+
+  - id: cross-modality-synthesis
+    title: "Cross-Modality Image Synthesis"
+    summary: >-
+      Imaging modalities carry complementary information, but acquiring all of
+      them is costly and not always clinically justified. We learn mappings
+      between modalities — MR to PET, for instance — so that a missing contrast
+      can be estimated from what has already been acquired. The question we
+      care about is when such an estimate is reliable enough to inform a
+      reading, and how to recognise when it is not.
+    figure: "/assets/img/research/spine.png"
+    figure_credit: "Figure from Synthetic PET/MR Fusion (The Spine Journal, 2024), © the respective publisher."
+    keywords:
+      - "Image-to-image translation"
+      - "PET/MR"
+      - "Diffusion models"
+      - "Missing modality"
+
+  - id: general-medical-intelligence
+    title: "Toward General Medical Intelligence"
+    summary: >-
+      Images, physiological signals, and clinical text describe the same patient
+      in different languages, yet models are usually built for one of them at a
+      time. We are beginning to work on representations shared across all three,
+      so that supervision available in one modality can support another. This is
+      the direction the lab is organised around, not a finished result — we have
+      no published work on it yet.
+    keywords:
+      - "Multimodal representation learning"
+      - "Medical vision–language models"
+      - "Transfer learning"
+      - "Label efficiency"
+
+ko:
+  - id: brain-foundation
+    title: "멀티모달 뇌신호 파운데이션 모델"
+    summary: >-
+      EEG와 fNIRS는 대량으로 기록되지만, 레이블이 달린 시행은 드물고 확보 비용도
+      큽니다. 레이블 없는 기록으로 사전학습하여 특정 패러다임이나 특정 피험자에
+      묶이지 않는 표현을 학습하고, 새로운 과제에는 소수의 레이블만으로 적응시킵니다.
+      하나의 모델이 단일 모달리티와 멀티모달 입력을 모두 처리하므로 EEG 단독,
+      fNIRS 단독, 두 신호의 결합이 같은 backbone을 공유합니다.
+    figure: "/assets/img/research/cibm.png"
+    figure_credit: "그림 출처: EFRM (Computers in Biology and Medicine, 2025), © 해당 출판사."
+    keywords:
+      - "자기지도 사전학습"
+      - "EEG"
+      - "fNIRS"
+      - "Few-shot 전이"
+      - "Foundation model"
+
+  - id: brain-signal-analysis
+    title: "비침습 뇌신호 분석"
+    summary: >-
+      두피에서 측정한 EEG와 fNIRS로부터 주의, 인지부하, 통증 같은 인지·생리 상태를
+      디코딩합니다. 이런 레이블은 대개 자기보고에서 나오기 때문에 피험자마다 편향이
+      있고, 학습 과정에서 어떤 표본을 신뢰할지 정하는 일 자체가 전처리 단계가 아니라
+      연구의 한 축이 됩니다. 침습적 측정이 어려운 BCI와 임상 모니터링을 목표로 합니다.
+    figure: "/assets/img/research/tnsre.png"
+    figure_credit: "그림 출처: EEG-based Multi-Level Pain Classification (IEEE TNSRE, 2026), © 해당 출판사."
+    keywords:
+      - "EEG"
+      - "fNIRS"
+      - "Brain–computer interface"
+      - "객관적 통증 평가"
+      - "레이블 노이즈"
+
+  - id: conditional-generation
+    title: "조건부 영상 생성"
+    summary: >-
+      진단명, 시점, 중증도 같은 조건을 지정한 상태에서 해부학적 구조를 통제하며
+      의료영상을 합성합니다. 적대적 생성 모델과 diffusion 기반 생성기를, 단면이
+      아니라 볼륨 맥락을 읽는 discriminator와 결합합니다. 생성된 볼륨은 질환 진행
+      양상을 살펴보거나 학습 데이터가 적은 상황을 보강하는 데 활용합니다.
+    figure: "/assets/img/research/pattern_recognition.png"
+    figure_credit: "그림 출처: Conditional GAN with 3D Discriminator (Pattern Recognition, 2023), © 해당 출판사."
+    keywords:
+      - "Generative adversarial network"
+      - "Diffusion model"
+      - "3D 의료영상"
+      - "조건부 합성"
+
+  - id: cross-modality-synthesis
+    title: "모달리티 간 영상 합성"
+    summary: >-
+      모달리티마다 담고 있는 정보가 다르지만, 모두 촬영하는 것은 비용이 크고 임상적으로
+      늘 정당화되지도 않습니다. MR에서 PET을 추정하는 식으로 모달리티 사이의 대응을
+      학습해, 이미 촬영한 영상으로부터 빠져 있는 대비를 복원합니다. 그 추정을 판독에
+      참고할 만큼 신뢰할 수 있는 때가 언제인지, 그렇지 않은 때를 어떻게 알아차릴지가
+      핵심 질문입니다.
+    figure: "/assets/img/research/spine.png"
+    figure_credit: "그림 출처: Synthetic PET/MR Fusion (The Spine Journal, 2024), © 해당 출판사."
+    keywords:
+      - "영상 간 변환"
+      - "PET/MR"
+      - "Diffusion model"
+      - "결측 모달리티"
+
+  - id: general-medical-intelligence
+    title: "범용 의료 지능을 향하여"
+    summary: >-
+      영상, 생체신호, 임상텍스트는 같은 환자를 서로 다른 언어로 기술하지만, 모델은
+      대개 그중 하나만을 위해 따로 만들어집니다. 세 가지를 아우르는 공통 표현을 학습해
+      한 모달리티에서 얻은 지도 정보가 다른 모달리티에 도움이 되도록 하는 방향을 이제
+      막 시작했습니다. 연구실이 지향하는 방향이며, 아직 이 주제로 발표한 논문은 없습니다.
+    keywords:
+      - "멀티모달 표현학습"
+      - "의료 vision–language 모델"
+      - "전이학습"
+      - "레이블 효율"

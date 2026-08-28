@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://milelab-yu.github.io/sitemap.xml
