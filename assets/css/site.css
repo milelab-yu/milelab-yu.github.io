@@ -441,3 +441,11 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
   border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px;
   background: var(--bg);
 }
+
+/* ===== 연구 페이지: 아이콘 + 키워드 중심 =============================== */
+.research-section { padding: 36px 0; }
+.research-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.research-head .research-icon { width: 34px; height: 34px; }
+.research-head h2 { margin: 0; font-size: 1.22rem; }
+.research-section .kw { margin-bottom: 18px; }
+.research-section .figure { margin: 0; }

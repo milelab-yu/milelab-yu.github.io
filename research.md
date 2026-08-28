@@ -20,21 +20,23 @@ below are examples from our published work.
 </section>
 
 {%- for a in areas %}
-<section class="section" id="{{ a.id }}">
-<h2>{{ a.title }}</h2>
-<p>{{ a.summary }}</p>
-{%- if a.keywords %}
-<ul class="keywords" aria-label="{{ L.keywords }}">
-{%- for k in a.keywords %}
-<li>{{ k }}</li>
-{%- endfor %}
-</ul>
-{%- endif %}
-{%- if a.figure %}
-<figure class="figure">
-<img src="{{ a.figure | relative_url }}" alt="{{ a.title }}" loading="lazy">
-<figcaption>{{ a.figure_credit }}</figcaption>
-</figure>
-{%- endif %}
+<section class="section research-section" id="{{ a.id }}">
+  <div class="research-head">
+    {% include research-icon.html id=a.id %}
+    <h2>{{ a.title }}</h2>
+  </div>
+  {%- if a.keywords %}
+  <ul class="kw" aria-label="{{ L.keywords }}">
+    {%- for k in a.keywords %}
+    <li>{{ k }}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+  {%- if a.figure %}
+  <figure class="figure">
+    <img src="{{ a.figure | relative_url }}" alt="{{ a.title }}" loading="lazy">
+    <figcaption>{{ a.figure_credit }}</figcaption>
+  </figure>
+  {%- endif %}
 </section>
 {%- endfor %}
