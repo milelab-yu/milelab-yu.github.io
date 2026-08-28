@@ -423,3 +423,21 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
   margin: 26px 0 8px; font-size: 1.05rem; font-weight: 700;
   letter-spacing: 0.01em; color: var(--fg-strong);
 }
+
+/* ===== 홈: 연구 분야 카드 (아이콘 + 키워드) ============================= */
+:root { --icon-fg: var(--brand-navy); --icon-accent: var(--brand-cyan); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --icon-fg: #cddcee; --icon-accent: #3fbff0; }
+}
+:root[data-theme="dark"] { --icon-fg: #cddcee; --icon-accent: #3fbff0; }
+
+.research-grid { gap: 16px; }
+.research-card { display: flex; flex-direction: column; gap: 12px; padding: 22px 20px; }
+.research-icon { width: 40px; height: 40px; display: block; flex: none; }
+.research-card h3 { margin: 0; font-size: 0.98rem; line-height: 1.35; }
+.kw { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.kw li {
+  font-size: 0.74rem; line-height: 1.5; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px;
+  background: var(--bg);
+}

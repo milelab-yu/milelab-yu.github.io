@@ -25,11 +25,18 @@ description: "Medical Intelligence & Learning Lab at Yeungnam University — fou
       <h2>{{ L.research_areas }}</h2>
       <a class="section-more" href="{{ '/research/' | relative_url }}">{{ L.view_all }} &rarr;</a>
     </div>
-    <div class="grid cols-3">
+    <div class="grid cols-3 research-grid">
       {%- for a in areas limit: 6 %}
-      <article class="card">
+      <article class="card research-card">
+        {% include research-icon.html id=a.id %}
         <h3>{{ a.title }}</h3>
-        <p>{{ a.summary | strip_html | truncate: 150 }}</p>
+        {%- if a.keywords %}
+        <ul class="kw">
+          {%- for k in a.keywords limit: 4 %}
+          <li>{{ k }}</li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
       </article>
       {%- endfor %}
     </div>

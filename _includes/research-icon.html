@@ -1,0 +1,65 @@
+{%- comment -%}
+  연구 분야 아이콘. include research-icon.html id=<research id>
+  로고와 같은 기하학적 언어(직각 블록 + 시안 액센트)를 따른다.
+  색은 --icon-fg / --icon-accent 로 테마에 대응한다.
+{%- endcomment -%}
+{%- assign i = include.id -%}
+<svg class="research-icon" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false"
+     xmlns="http://www.w3.org/2000/svg">
+  {%- case i -%}
+
+  {%- when 'foundation-models' -%}
+  {%- comment -%} 넓은 비레이블 토대 위에 좁아지는 층 — 사전학습에서 downstream으로 {%- endcomment -%}
+  <rect x="4"  y="33" width="40" height="9" rx="1.5" fill="var(--icon-fg)"/>
+  <rect x="10" y="21" width="28" height="9" rx="1.5" fill="var(--icon-fg)" opacity=".62"/>
+  <rect x="17" y="9"  width="14" height="9" rx="1.5" fill="var(--icon-accent)"/>
+
+  {%- when 'multimodal' -%}
+  {%- comment -%} 세 갈래 입력이 하나로 모이는 형태 {%- endcomment -%}
+  <rect x="4" y="5"  width="12" height="10" rx="1.5" fill="var(--icon-fg)"/>
+  <rect x="4" y="19" width="12" height="10" rx="1.5" fill="var(--icon-accent)"/>
+  <rect x="4" y="33" width="12" height="10" rx="1.5" fill="var(--icon-fg)"/>
+  <path d="M18 10h8a6 6 0 0 1 6 6v6M18 24h14M18 38h8a6 6 0 0 0 6-6v-6"
+        fill="none" stroke="var(--icon-fg)" stroke-width="2.6" stroke-linecap="round"/>
+  <rect x="36" y="18" width="8" height="12" rx="1.5" fill="var(--icon-accent)"/>
+
+  {%- when 'generative' -%}
+  {%- comment -%} 흩어진 점이 구조를 갖춘 격자로 {%- endcomment -%}
+  <circle cx="7"  cy="11" r="2.4" fill="var(--icon-fg)" opacity=".5"/>
+  <circle cx="14" cy="22" r="2.4" fill="var(--icon-fg)" opacity=".5"/>
+  <circle cx="6"  cy="32" r="2.4" fill="var(--icon-fg)" opacity=".5"/>
+  <circle cx="15" cy="38" r="2.4" fill="var(--icon-fg)" opacity=".5"/>
+  <circle cx="13" cy="7"  r="2.4" fill="var(--icon-fg)" opacity=".5"/>
+  <path d="M20 24h6" fill="none" stroke="var(--icon-fg)" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M23.5 20.5 27 24l-3.5 3.5" fill="none" stroke="var(--icon-fg)" stroke-width="2.6"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="30" y="12" width="7" height="7" rx="1" fill="var(--icon-fg)"/>
+  <rect x="39" y="12" width="7" height="7" rx="1" fill="var(--icon-accent)"/>
+  <rect x="30" y="21" width="7" height="7" rx="1" fill="var(--icon-accent)"/>
+  <rect x="39" y="21" width="7" height="7" rx="1" fill="var(--icon-fg)"/>
+  <rect x="30" y="30" width="7" height="7" rx="1" fill="var(--icon-fg)"/>
+  <rect x="39" y="30" width="7" height="7" rx="1" fill="var(--icon-fg)" opacity=".45"/>
+
+  {%- when 'label-efficient' -%}
+  {%- comment -%} 3×3 중 둘만 레이블됨 {%- endcomment -%}
+  <rect x="5"  y="5"  width="11" height="11" rx="1.5" fill="var(--icon-accent)"/>
+  <rect x="19" y="5"  width="11" height="11" rx="1.5" fill="none" stroke="var(--icon-fg)" stroke-width="2.4" opacity=".55"/>
+  <rect x="33" y="5"  width="11" height="11" rx="1.5" fill="none" stroke="var(--icon-fg)" stroke-width="2.4" opacity=".55"/>
+  <rect x="5"  y="19" width="11" height="11" rx="1.5" fill="none" stroke="var(--icon-fg)" stroke-width="2.4" opacity=".55"/>
+  <rect x="19" y="19" width="11" height="11" rx="1.5" fill="none" stroke="var(--icon-fg)" stroke-width="2.4" opacity=".55"/>
+  <rect x="33" y="19" width="11" height="11" rx="1.5" fill="var(--icon-fg)"/>
+  <rect x="5"  y="33" width="11" height="11" rx="1.5" fill="none" stroke="var(--icon-fg)" stroke-width="2.4" opacity=".55"/>
+  <rect x="19" y="33" width="11" height="11" rx="1.5" fill="none" stroke="var(--icon-fg)" stroke-width="2.4" opacity=".55"/>
+  <rect x="33" y="33" width="11" height="11" rx="1.5" fill="none" stroke="var(--icon-fg)" stroke-width="2.4" opacity=".55"/>
+
+  {%- when 'clinical-ai' -%}
+  {%- comment -%} 방패 + 확인 표시 — 검증된 임상 사용 {%- endcomment -%}
+  <path d="M24 4 42 10v13c0 10.5-7.2 18.4-18 21-10.8-2.6-18-10.5-18-21V10z"
+        fill="none" stroke="var(--icon-fg)" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M16 24.5 21.5 30 32 19" fill="none" stroke="var(--icon-accent)" stroke-width="3.4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  {%- else -%}
+  <rect x="6" y="6" width="36" height="36" rx="3" fill="none" stroke="var(--icon-fg)" stroke-width="2.6"/>
+  {%- endcase -%}
+</svg>
