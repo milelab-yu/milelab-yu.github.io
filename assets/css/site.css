@@ -343,3 +343,28 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
   border: 1px solid var(--line); border-radius: 999px; padding: 3px 11px;
 }
 .pub-count { color: var(--muted); font-weight: 400; font-size: 0.7em; }
+
+/* 상단 바에 학부명 텍스트를 두지 않으므로 액션만 우측 정렬 */
+.institution-bar .wrap { justify-content: flex-end; }
+
+/* 푸터 하단 메뉴를 두지 않으므로 2열 배치 */
+.footer-grid { justify-content: flex-start; gap: 56px; }
+.footer-affiliation { margin-left: auto; align-items: flex-start; }
+@media (max-width: 760px) { .footer-affiliation { margin-left: 0; } }
+
+/* ===== 담당 과목 ========================================================= */
+.term-head { margin: 1.6em 0 0.8em; font-size: 1rem; color: var(--muted); font-weight: 600; }
+.term-head:first-of-type { margin-top: 0; }
+.course-list { list-style: none; margin: 0; padding: 0; }
+.course-list > li { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.course-name { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.course-name strong { color: var(--fg-strong); font-size: 1.02rem; }
+.course-alt { color: var(--muted); font-size: 0.85rem; }
+.course-meta { display: grid; grid-template-columns: max-content 1fr; gap: 3px 18px; margin: 0; font-size: 0.9rem; }
+.course-meta dt { color: var(--muted); }
+.course-meta dd { margin: 0; }
+.office-hours { margin-top: 16px; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 520px) {
+  .course-meta { grid-template-columns: 1fr; gap: 0; }
+  .course-meta dt { margin-top: 6px; font-size: 0.8rem; }
+}

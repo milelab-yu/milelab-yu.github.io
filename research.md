@@ -4,20 +4,23 @@ lang: en
 ref: research
 permalink: /research/
 title: "Research"
-description: "Brain-signal foundation models, non-invasive EEG/fNIRS analysis, conditional and cross-modality medical image synthesis at MILE Lab @ YU."
-intro: "Learning representations that hold across modalities, subjects, and label budgets."
+description: "Medical AI research at MILE Lab @ YU — foundation models, multimodal learning, generative models, label-efficient learning, and trustworthy clinical AI."
+intro: "Machine learning across medical images, biosignals, and clinical text."
 ---
 {%- assign L = site.data.i18n[page.lang] -%}
 {%- assign areas = site.data.research[page.lang] -%}
 
 <section class="section">
 <p>
-MILE Lab works toward general medical intelligence across multi-modality:
-models that learn the structure shared by medical images, brain signals, and
-clinical text. What ties the topics below together is a practical constraint —
-medical data arrive in different modalities, from different subjects and sites,
-with very few labels that can be trusted. Our question in each case is whether a
-representation learned in one such setting survives the move to the next.
+We work on machine learning for medical data of every kind — images, biosignals,
+and clinical text — and across the methods that make it usable: representation
+learning, generative modelling, multimodal fusion, and learning under weak or
+shifting supervision. The recurring question is whether something learned in one
+setting still holds in the next: another modality, another subject, another hospital.
+</p>
+<p>
+The figures below come from our published work and stand as concrete instances of
+each direction rather than the boundary of it.
 </p>
 </section>
 

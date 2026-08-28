@@ -3,7 +3,6 @@
 <header class="site-header">
   <div class="institution-bar">
     <div class="wrap">
-      <a class="dept-link" href="{{ L.dept_url }}" target="_blank" rel="noopener">{{ L.dept }}</a>
       <div class="bar-actions">
         <nav class="lang-toggle" aria-label="{{ L.language }}">
           {%- assign alts = site.pages | where: "ref", page.ref | sort: "lang" -%}

@@ -4,17 +4,35 @@ lang: ko
 ref: teaching
 permalink: /ko/teaching/
 title: "강의"
-description: "2026학년도 담당 과목은 확정되면 게시합니다. 학부연구생이 함께할 수 있는 연구 주제를 안내합니다."
+description: "영남대학교 컴퓨터학부 정의진 교수 담당 과목과 학부연구생 연구 주제 안내."
 intro: "영남대학교 컴퓨터학부 MILE Lab의 강의와 학부연구생 지도 안내입니다."
 ---
 {%- assign L = site.data.i18n[page.lang] -%}
 
 <section class="section">
   <h2>{{ L.courses }}</h2>
-  <div class="empty-state">
-    <strong>{{ L.courses_tba }}</strong>
-    {{ L.courses_tba_body }}
-  </div>
+  {%- for t in site.data.teaching[page.lang] %}
+  <h3 class="term-head">{{ t.term }}</h3>
+  <ul class="course-list">
+    {%- for c in t.courses %}
+    <li>
+      <div class="course-name">
+        <strong>{{ c.title }}</strong>
+        <span class="course-alt">{{ c.title_local }}</span>
+      </div>
+      <dl class="course-meta">
+        <dt>{{ L.course_kind }}</dt><dd>{{ c.kind }} · {{ c.credits }}</dd>
+        <dt>{{ L.course_time }}</dt><dd>{{ c.schedule }}</dd>
+        <dt>{{ L.course_room }}</dt><dd>{{ c.room }}</dd>
+        <dt>{{ L.course_text }}</dt><dd>{{ c.textbook }}</dd>
+      </dl>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- if t.office_hours %}
+  <p class="office-hours">{{ L.office_hours }}: {{ t.office_hours }}</p>
+  {%- endif %}
+  {%- endfor %}
 </section>
 
 <section class="section">

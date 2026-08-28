@@ -4,17 +4,35 @@ lang: en
 ref: teaching
 permalink: /teaching/
 title: "Teaching"
-description: "Course assignments for 2026 are not confirmed yet. Research topics open to undergraduate researchers at MILE Lab."
+description: "Courses taught by Euijin Jung at Yeungnam University, and research topics open to undergraduate researchers."
 intro: "Coursework and supervised research at MILE Lab, School of Computer Science and Engineering, Yeungnam University."
 ---
 {%- assign L = site.data.i18n[page.lang] -%}
 
 <section class="section">
   <h2>{{ L.courses }}</h2>
-  <div class="empty-state">
-    <strong>{{ L.courses_tba }}</strong>
-    {{ L.courses_tba_body }}
-  </div>
+  {%- for t in site.data.teaching[page.lang] %}
+  <h3 class="term-head">{{ t.term }}</h3>
+  <ul class="course-list">
+    {%- for c in t.courses %}
+    <li>
+      <div class="course-name">
+        <strong>{{ c.title }}</strong>
+        <span class="course-alt">{{ c.title_local }}</span>
+      </div>
+      <dl class="course-meta">
+        <dt>{{ L.course_kind }}</dt><dd>{{ c.kind }} · {{ c.credits }}</dd>
+        <dt>{{ L.course_time }}</dt><dd>{{ c.schedule }}</dd>
+        <dt>{{ L.course_room }}</dt><dd>{{ c.room }}</dd>
+        <dt>{{ L.course_text }}</dt><dd>{{ c.textbook }}</dd>
+      </dl>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- if t.office_hours %}
+  <p class="office-hours">{{ L.office_hours }}: {{ t.office_hours }}</p>
+  {%- endif %}
+  {%- endfor %}
 </section>
 
 <section class="section">

@@ -11,14 +11,15 @@ intro: "MILE Lab은 2026년에 문을 열었고, 첫 구성원을 모으고 있�
 {%- assign M = site.data.members[page.lang] -%}
 {%- assign pi = M.pi -%}
 
-<section class="section">
+<section class="section" id="professor">
+  <h2>{{ L.principal_investigator }}</h2>
   <div class="person">
     <div class="portrait">
       <img src="{{ pi.photo | relative_url }}" alt="{{ pi.photo_alt }}" width="425" height="567">
     </div>
     <div class="bio">
       <h2>{{ pi.name }} ({{ pi.name_local }})</h2>
-      <p class="role">{{ L.principal_investigator }} &middot; {{ pi.role_line }}</p>
+      <p class="role">{{ pi.role_line }}</p>
       {%- for para in pi.bio %}
       <p>{{ para }}</p>
       {%- endfor %}
@@ -67,7 +68,7 @@ intro: "MILE Lab은 2026년에 문을 열었고, 첫 구성원을 모으고 있�
 </section>
 
 <section class="section">
-  <h2>{{ L.lab_members }}</h2>
+  <h2 id="students">{{ L.lab_members }}</h2>
   {%- if M.members and M.members.size > 0 %}
   <div class="grid cols-3">
     {%- for m in M.members %}

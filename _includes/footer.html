@@ -22,12 +22,6 @@
           <a href="{{ L.dept_url }}" target="_blank" rel="noopener">{{ L.dept }}</a>
         </p>
       </div>
-
-      <nav class="footer-links" aria-label="{{ L.footer_nav }}">
-        {%- for item in site.data.nav[page.lang] %}
-        <a href="{{ item.url | relative_url }}">{{ item.label }}</a>
-        {%- endfor %}
-      </nav>
     </div>
     <div class="footer-bottom">
       <p>&copy; {{ 'now' | date: "%Y" }} {{ L.lab_name }}. {{ L.rights }}</p>
