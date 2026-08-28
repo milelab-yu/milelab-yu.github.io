@@ -11,7 +11,6 @@ en:
       - "Self-supervised learning"
       - "Representation learning"
       - "Few-shot transfer"
-      - "Pre-training"
 
   - id: multimodal
     title: "Multimodal and Cross-Modality Learning"
@@ -22,8 +21,7 @@ en:
     keywords:
       - "Multimodal fusion"
       - "Cross-modality synthesis"
-      - "Vision–language models"
-      - "Missing modality"
+      - "Vision–language"
 
   - id: generative
     title: "Generative Models for Medical Data"
@@ -35,7 +33,6 @@ en:
       - "Diffusion models"
       - "GANs"
       - "Controllable synthesis"
-      - "Privacy-preserving data"
 
   - id: label-efficient
     title: "Label-Efficient and Robust Learning"
@@ -44,10 +41,9 @@ en:
     figure: "/assets/img/research/tnsre.png"
     figure_credit: "Example from our EEG-based pain assessment work (IEEE TNSRE, 2026), © the respective publisher."
     keywords:
-      - "Semi- and self-supervised learning"
-      - "Noisy and subjective labels"
+      - "Semi-supervised learning"
+      - "Noisy labels"
       - "Domain shift"
-      - "Cross-subject generalisation"
 
   - id: clinical-ai
     title: "Trustworthy Clinical AI"
@@ -55,9 +51,8 @@ en:
       Interpretability, calibrated uncertainty, and evaluation protocols that reflect how a system will actually be used in the clinic.
     keywords:
       - "Interpretability"
-      - "Uncertainty estimation"
+      - "Uncertainty"
       - "Clinical validation"
-      - "Human–AI collaboration"
 
 ko:
   - id: foundation-models
@@ -70,7 +65,6 @@ ko:
       - "자기지도학습"
       - "표현 학습"
       - "Few-shot 전이"
-      - "사전학습"
 
   - id: multimodal
     title: "멀티모달·모달리티 간 학습"
@@ -81,8 +75,7 @@ ko:
     keywords:
       - "멀티모달 융합"
       - "모달리티 간 합성"
-      - "Vision–language 모델"
-      - "결측 모달리티"
+      - "Vision–language"
 
   - id: generative
     title: "의료 데이터 생성 모델"
@@ -94,7 +87,6 @@ ko:
       - "Diffusion 모델"
       - "GAN"
       - "제어 가능한 합성"
-      - "프라이버시 보존 데이터"
 
   - id: label-efficient
     title: "레이블 효율·강건 학습"
@@ -103,10 +95,9 @@ ko:
     figure: "/assets/img/research/tnsre.png"
     figure_credit: "예시: 본 연구실의 뇌파 기반 통증 평가 연구 (IEEE TNSRE, 2026), © 해당 출판사."
     keywords:
-      - "준지도·자기지도학습"
-      - "잡음·주관적 레이블"
+      - "준지도학습"
+      - "잡음 레이블"
       - "도메인 시프트"
-      - "피험자 간 일반화"
 
   - id: clinical-ai
     title: "신뢰할 수 있는 임상 AI"
@@ -116,4 +107,3 @@ ko:
       - "해석 가능성"
       - "불확실성 추정"
       - "임상 검증"
-      - "인간–AI 협업"

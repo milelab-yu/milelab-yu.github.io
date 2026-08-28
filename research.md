@@ -10,14 +10,6 @@ intro: "Machine learning across medical images, biosignals, and clinical text."
 {%- assign L = site.data.i18n[page.lang] -%}
 {%- assign areas = site.data.research[page.lang] -%}
 
-<section class="section">
-<p>
-We work on machine learning for medical data in all its forms — images,
-biosignals, and clinical text — across representation learning, generative
-modelling, multimodal fusion, and learning under weak supervision. The figures
-below are examples from our published work.
-</p>
-</section>
 
 {%- for a in areas %}
 <section class="section research-section" id="{{ a.id }}">

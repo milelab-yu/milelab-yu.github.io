@@ -10,13 +10,6 @@ intro: "의료영상·생체신호·임상텍스트를 아우르는 기계학습
 {%- assign L = site.data.i18n[page.lang] -%}
 {%- assign areas = site.data.research[page.lang] -%}
 
-<section class="section">
-<p>
-의료영상·생체신호·임상텍스트 등 의료 데이터 전반을 대상으로 표현 학습·생성 모델·
-멀티모달 융합·약한 감독 학습을 연구합니다. 아래 그림은 발표한 논문에서 가져온
-예시입니다.
-</p>
-</section>
 
 {%- for a in areas %}
 <section class="section research-section" id="{{ a.id }}">
