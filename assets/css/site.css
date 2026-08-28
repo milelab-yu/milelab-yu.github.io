@@ -384,3 +384,7 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
   :root:not([data-theme="light"]) .sub-nav a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: #04121f; }
 }
 .member-photo { border-radius: 8px; margin-bottom: 10px; width: 100%; display: block; }
+
+/* 강의: 학기 + 과목명만 */
+.course-list.plain > li { display: flex; align-items: baseline; gap: 12px; padding: 13px 0; }
+.course-list.plain .course-title { color: var(--fg-strong); font-weight: 600; font-size: 1.02rem; }
