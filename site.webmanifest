@@ -1,0 +1,14 @@
+{
+  "name": "MILE Lab @ YU",
+  "short_name": "MILE Lab",
+  "description": "Medical Intelligence & Learning Lab, Yeungnam University",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "background_color": "#ffffff",
+  "theme_color": "#062d60",
+  "icons": [
+    { "src": "/assets/logo/favicon-32.png",  "sizes": "32x32",   "type": "image/png" },
+    { "src": "/assets/logo/favicon-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/assets/logo/favicon.svg",     "sizes": "any",     "type": "image/svg+xml" }
+  ]
+}

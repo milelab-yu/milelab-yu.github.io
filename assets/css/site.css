@@ -45,7 +45,7 @@
     --accent-quiet: #3fbff0;
     --hero-bg: linear-gradient(160deg, #101b2e 0%, #0b1220 100%);
     --mark-field: #e8eef7;
-    --mark-accent: #3fbff0;
+    --mark-accent: #0088c0;   /* 다크: 밝은 필드 위 3.41:1 (WCAG 그래픽 3:1) */
   }
 }
 :root[data-theme="dark"] {
@@ -60,7 +60,7 @@
   --accent-quiet: #3fbff0;
   --hero-bg: linear-gradient(160deg, #101b2e 0%, #0b1220 100%);
   --mark-field: #e8eef7;
-  --mark-accent: #3fbff0;
+  --mark-accent: #0088c0;   /* 다크: 밝은 필드 위 3.41:1 (WCAG 그래픽 3:1) */
 }
 
 /* ========================================================================== */
@@ -332,3 +332,14 @@ main { display: block; }
 .hero .lede { text-wrap: pretty; }
 .page .wrap > h1 { margin-top: 0.2em; }
 h1.tagline { margin: 0 0 14px; font-weight: 700; }
+
+/* ===== 연구 키워드 / 논문 편수 ============================================ */
+.keywords {
+  list-style: none; display: flex; flex-wrap: wrap;
+  gap: 8px; margin: 16px 0 0; padding: 0;
+}
+.keywords li {
+  font-size: 0.78rem; color: var(--muted); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px; padding: 3px 11px;
+}
+.pub-count { color: var(--muted); font-weight: 400; font-size: 0.7em; }

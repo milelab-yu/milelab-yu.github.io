@@ -1,0 +1,69 @@
+{%- comment -%}
+논문 목록. en/ko 공통 — 논문 데이터는 언어중립이고 UI 문자열만 i18n에서 가져온다.
+{%- endcomment -%}
+{%- assign L = site.data.i18n[page.lang] -%}
+{%- assign pubs = site.data.publications -%}
+{%- assign groups = "journal,conference" | split: "," -%}
+{%- for g in groups -%}
+  {%- if g == "journal" -%}
+    {%- assign items = pubs.journal -%}
+    {%- assign heading = L.journal_articles -%}
+  {%- else -%}
+    {%- assign items = pubs.conference -%}
+    {%- assign heading = L.conference_papers -%}
+  {%- endif -%}
+  {%- if items and items.size > 0 %}
+<section class="section pub-group" id="{{ g }}">
+  <div class="section-head">
+    <h2>{{ heading }} <span class="pub-count">{{ items | size }}</span></h2>
+  </div>
+  <ul class="pub-list">
+    {%- for p in items %}
+    <li>
+      <span class="pub-badge">{{ p.abbr }}</span>
+      <div class="pub-body">
+        <span class="pub-title">{{ p.title }}</span>
+        <div class="pub-authors">
+          {%- for a in p.authors -%}
+            {%- if a.last == "Jung" and a.first == "Euijin" -%}
+              <span class="me">{{ a.display }}</span>
+            {%- else -%}
+              {{ a.display }}
+            {%- endif -%}
+            {%- unless forloop.last %}, {% endunless -%}
+          {%- endfor -%}
+        </div>
+        <div class="pub-venue">
+          {{- p.venue -}}
+          {%- if p.volume and p.volume != "" %}, {{ p.volume }}
+            {%- if p.number and p.number != "" %}({{ p.number }}){% endif -%}
+          {%- endif -%}
+          {%- if p.pages and p.pages != "" %}, {{ p.pages | replace: "--", "–" }}{% endif -%}
+          , {{ p.year }}.
+        </div>
+        {%- if p.note and p.note != "" %}
+        <div class="pub-note">{{ p.note }}</div>
+        {%- endif %}
+        {%- assign has_doi = false %}{% if p.doi and p.doi != "" %}{% assign has_doi = true %}{% endif %}
+        {%- assign has_code = false %}{% if p.code and p.code != "" %}{% assign has_code = true %}{% endif %}
+        {%- assign has_url = false %}{% if p.url and p.url != "" %}{% assign has_url = true %}{% endif %}
+        {%- if has_doi or has_code or has_url %}
+        <div class="pub-links">
+          {%- if has_doi %}
+          <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">{{ L.doi_label }}</a>
+          {%- endif %}
+          {%- if has_url %}
+          <a href="{{ p.url }}" target="_blank" rel="noopener">{{ L.link_label }}</a>
+          {%- endif %}
+          {%- if has_code %}
+          <a href="{{ p.code }}" target="_blank" rel="noopener">{{ L.code_label }}</a>
+          {%- endif %}
+        </div>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+  {%- endif -%}
+{%- endfor -%}

@@ -24,10 +24,15 @@
   {%- for p in alts %}{% if p.lang != page.lang %}
   <meta property="og:locale:alternate" content="{% if p.lang == 'ko' %}ko_KR{% else %}en_US{% endif %}">
   {%- endif %}{% endfor %}
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{{ page.og_image | default: '/assets/img/og-default.png' | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ L.lab_name }} — {{ L.lab_full_plain }}">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="{{ '/assets/logo/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="icon" href="{{ '/assets/logo/favicon-32.png' | relative_url }}" sizes="32x32">
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/logo/favicon-180.png' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" href="{{ '/feed.xml' | relative_url }}" title="{{ L.lab_name }}">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
