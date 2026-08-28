@@ -8,6 +8,16 @@
      xmlns="http://www.w3.org/2000/svg">
   {%- case i -%}
 
+  {%- when 'bci' -%}
+  {%- comment -%} 두피 전극 + 신호 파형 — 비침습 뇌신호 계측 {%- endcomment -%}
+  <path d="M8 27a16 16 0 0 1 32 0v6a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5z"
+        fill="none" stroke="var(--icon-fg)" stroke-width="2.8" stroke-linejoin="round"/>
+  <rect x="12" y="6"  width="7" height="7" rx="1.4" fill="var(--icon-fg)"/>
+  <rect x="29" y="6"  width="7" height="7" rx="1.4" fill="var(--icon-fg)"/>
+  <rect x="20.5" y="2" width="7" height="7" rx="1.4" fill="var(--icon-accent)"/>
+  <path d="M13 30h5l3-7 4 13 3-8h7" fill="none" stroke="var(--icon-accent)" stroke-width="2.8"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
   {%- when 'foundation-models' -%}
   {%- comment -%} 넓은 비레이블 토대 위에 좁아지는 층 — 사전학습에서 downstream으로 {%- endcomment -%}
   <rect x="4"  y="33" width="40" height="9" rx="1.5" fill="var(--icon-fg)"/>
