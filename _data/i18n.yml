@@ -6,8 +6,9 @@ en:
   lab_full_plain: "Medical Intelligence & Learning Lab"
   tagline: "Toward general medical intelligence across multi-modality"
   tagline_note: >-
-    One model that handles medical data in all its forms — images, signals, and text.
-    A model that keeps working when it moves to a new hospital and new patients.
+    We work across the modalities of medical data — images, biosignals, and clinical
+    text — rather than specialising in a single one. The aim is methods that still
+    hold when they move to a new modality, a new hospital, and new patients.
   yu: "Yeungnam University"
   yu_url: "https://www.yu.ac.kr/main/en/"
   dept: "School of Computer Science and Engineering, Yeungnam University"
@@ -83,8 +84,9 @@ ko:
   lab_full_plain: "의료지능·학습 연구실"
   tagline: "멀티모달리티를 아우르는 범용 의료 지능을 향하여"
   tagline_note: >-
-    영상·신호·텍스트 등 형태가 다른 의료 데이터를 하나의 모델이 함께 다루는 것,
-    그리고 그 성능이 새로운 병원과 새로운 환자에게도 그대로 이어지는 것을 뜻합니다.
+    영상·생체신호·임상텍스트 등 의료 데이터의 여러 모달리티를 한 분야에 국한하지 않고
+    폭넓게 다룹니다. 새로운 모달리티, 새로운 병원, 새로운 환자로 옮겨가도 성립하는
+    방법을 찾는 것이 목표입니다.
   yu: "영남대학교"
   yu_url: "https://www.yu.ac.kr/"
   dept: "영남대학교 컴퓨터학부"
