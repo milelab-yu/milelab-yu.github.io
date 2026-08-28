@@ -23,31 +23,15 @@ en:
         on multimodal EEG–fNIRS foundation models and on EEG-based pain assessment.
         He received his Ph.D. and M.S. from DGIST, and was advised by
         Prof. Sang Hyun Park during his doctoral study.
-    education:
-      - when: "2023"
-        what: "Ph.D., Robotics and Mechatronics Engineering, DGIST"
-        note: "Advisor: Prof. Sang Hyun Park"
-      - when: "2019"
-        what: "M.S., Robotics Engineering, DGIST"
-      - when: ""
-        what: "B.S., Electronic Engineering, Korea University of Technology and Education"
-    positions:
+    career:
       - when: "2026 –"
         what: "Assistant Professor, School of Computer Science and Engineering, Yeungnam University"
-      - when: "2023.08 – 2026"
-        what: "Postdoctoral Researcher, BRAIN Lab, Division of Intelligent Robot, DGIST"
-        note: "Advisor: Prof. Jinung An"
-    awards:
+      - when: "2023 – 2026"
+        what: "Postdoctoral Researcher, BRAIN Lab, DGIST"
       - when: "2023"
-        what: "Best Researcher Award, Robotics and Mechatronics Engineering, DGIST"
-      - when: "2021"
-        what: "3rd place out of 40 teams, Seoul National University Hospital Sleep AI Challenge"
-      - when: "2018"
-        what: "Best Poster Award, 30th Workshop on Image Processing and Image Understanding (IPIU)"
+        what: "Ph.D., DGIST"
     links:
       scholar: "https://scholar.google.com/citations?user=-rAfX9kAAAAJ"
-      github: "https://github.com/EuijinMisp"
-      cv: "/assets/cv.pdf"
   members: []
   alumni: []
 
@@ -70,30 +54,14 @@ ko:
         재직하며 안진웅(Jinung An) 교수와 함께 멀티모달 EEG–fNIRS foundation model과
         뇌파 기반 통증 평가를 연구했습니다. DGIST에서 박사·석사 학위를 받았고,
         박사과정은 박상현(Sang Hyun Park) 교수의 지도를 받았습니다.
-    education:
-      - when: "2023"
-        what: "DGIST 박사 (Robotics and Mechatronics Engineering)"
-        note: "지도교수: 박상현(Sang Hyun Park)"
-      - when: "2019"
-        what: "DGIST 석사 (Robotics Engineering)"
-      - when: ""
-        what: "한국기술교육대학교 학사 (Electronic Engineering)"
-    positions:
-      - when: "2026 – 현재"
+    career:
+      - when: "2026 –"
         what: "영남대학교 컴퓨터학부 조교수"
-      - when: "2023.08 – 2026"
-        what: "DGIST 지능형로봇연구부 BRAIN Lab 박사후연구원"
-        note: "안진웅(Jinung An) 교수 연구실"
-    awards:
+      - when: "2023 – 2026"
+        what: "DGIST BRAIN Lab 박사후연구원"
       - when: "2023"
-        what: "우수연구자상 (Best Researcher Award), DGIST Robotics and Mechatronics Engineering"
-      - when: "2021"
-        what: "서울대학교병원 Sleep AI Challenge 3위 (40개 팀 참가)"
-      - when: "2018"
-        what: "제30회 IPIU (Workshop on Image Processing and Image Understanding) 우수 포스터상"
+        what: "DGIST 박사"
     links:
       scholar: "https://scholar.google.com/citations?user=-rAfX9kAAAAJ"
-      github: "https://github.com/EuijinMisp"
-      cv: "/assets/cv.pdf"
   members: []
   alumni: []

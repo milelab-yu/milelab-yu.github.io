@@ -5,10 +5,6 @@ en:
   lab_full: "Medical Intelligence &amp; Learning Lab"
   lab_full_plain: "Medical Intelligence & Learning Lab"
   tagline: "Toward general medical intelligence across multi-modality"
-  tagline_lede: >-
-    We build models that learn shared structure across medical images, brain
-    signals, and clinical text — so that one system can transfer to a new
-    modality, a new subject, and a new hospital with only a handful of labels.
   yu: "Yeungnam University"
   yu_url: "https://www.yu.ac.kr/main/en/"
   dept: "School of Computer Science and Engineering, Yeungnam University"
@@ -49,6 +45,7 @@ en:
   contact_url: "/contact/"
   education: "Education"
   positions: "Positions"
+  career: "Career"
   awards: "Awards"
   projects: "Research projects"
   # 빈 상태
@@ -82,10 +79,6 @@ ko:
   lab_full: "의료지능·학습 연구실"
   lab_full_plain: "의료지능·학습 연구실"
   tagline: "멀티모달리티를 아우르는 범용 의료 지능을 향하여"
-  tagline_lede: >-
-    의료영상·뇌신호·임상텍스트에 공통으로 흐르는 구조를 학습하는 모델을 만듭니다.
-    하나의 시스템이 새로운 모달리티, 새로운 피험자, 새로운 병원으로 적은 레이블만으로
-    옮겨갈 수 있게 하는 것이 목표입니다.
   yu: "영남대학교"
   yu_url: "https://www.yu.ac.kr/"
   dept: "영남대학교 컴퓨터학부"
@@ -126,6 +119,7 @@ ko:
   contact_url: "/ko/contact/"
   education: "학력"
   positions: "경력"
+  career: "약력"
   awards: "수상"
   projects: "연구과제"
   # 빈 상태
