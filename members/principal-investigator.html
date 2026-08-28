@@ -19,9 +19,13 @@ description: "Euijin Jung — Principal Investigator of MILE Lab, Assistant Prof
     <div class="bio">
       <h2>{{ pi.name }}</h2>
       <p class="role">{{ pi.role_line }}</p>
-      {%- for para in pi.bio %}
-      <p>{{ para }}</p>
-      {%- endfor %}
+
+      <ul class="career-inline">
+        {%- for item in pi.career %}
+        <li><span class="when">{{ item.when }}</span><span>{{ item.what }}</span></li>
+        {%- endfor %}
+      </ul>
+
       <dl class="dl-grid">
         <dt>{{ L.email }}</dt>
         <dd><a href="mailto:{{ pi.email }}">{{ pi.email }}</a></dd>
@@ -30,13 +34,10 @@ description: "Euijin Jung — Principal Investigator of MILE Lab, Assistant Prof
         <dt>{{ L.links }}</dt>
         <dd><a href="{{ pi.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a></dd>
       </dl>
+
+      {%- for para in pi.bio %}
+      <p class="bio-text">{{ para }}</p>
+      {%- endfor %}
     </div>
   </div>
-
-  <h3>{{ L.career }}</h3>
-  <ul class="timeline">
-    {%- for item in pi.career %}
-    <li><span class="when">{{ item.when }}</span><div>{{ item.what }}</div></li>
-    {%- endfor %}
-  </ul>
 </section>

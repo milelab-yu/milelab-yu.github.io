@@ -31,13 +31,8 @@ description: "MILE Lab 연락처 — 이메일, 영남대학교 IT관 223호 위
   <h2>{{ L.directions }}</h2>
   <div class="map-embed">
     <iframe
-      src="https://www.google.com/maps?q=%EC%98%81%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20IT%EA%B4%80&hl=ko&z=16&output=embed"
-      title="영남대학교 IT관 위치"
-      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-      allowfullscreen></iframe>
+      src="https://map.kakao.com/?q=%EC%98%81%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20IT%EA%B4%80"
+      title="영남대학교 IT관 위치 (카카오맵)"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-  <p class="map-links">
-    <a href="https://map.naver.com/p/search/%EC%98%81%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20IT%EA%B4%80" target="_blank" rel="noopener">네이버 지도</a>
-    <a href="https://map.kakao.com/?q=%EC%98%81%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20IT%EA%B4%80" target="_blank" rel="noopener">카카오맵</a>
-  </p>
 </section>

@@ -31,13 +31,8 @@ description: "Contact MILE Lab — email, office in Room 223 of the IT Building,
   <h2>{{ L.directions }}</h2>
   <div class="map-embed">
     <iframe
-      src="https://www.google.com/maps?q=Yeungnam+University+IT+Building&hl=en&z=16&output=embed"
-      title="Map of the IT Building, Yeungnam University"
-      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-      allowfullscreen></iframe>
+      src="https://map.kakao.com/?q=%EC%98%81%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20IT%EA%B4%80"
+      title="Map of the IT Building, Yeungnam University (Kakao Map)"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-  <p class="map-links">
-    <a href="https://map.naver.com/p/search/%EC%98%81%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20IT%EA%B4%80" target="_blank" rel="noopener">Naver Map</a>
-    <a href="https://map.kakao.com/?q=%EC%98%81%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20IT%EA%B4%80" target="_blank" rel="noopener">Kakao Map</a>
-  </p>
 </section>
