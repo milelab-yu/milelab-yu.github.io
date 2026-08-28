@@ -4,10 +4,7 @@ en:
   - id: foundation-models
     title: "Medical Foundation Models"
     summary: >-
-      Hospitals accumulate far more unlabelled data than labelled data. We
-      pre-train on large unlabelled collections — images, biosignals, and
-      clinical text — to learn representations that a downstream task can reuse
-      from a handful of labels.
+      Pre-training on large unlabelled collections of images, biosignals, and clinical text, so that a downstream task can start from a handful of labels.
     figure: "/assets/img/research/cibm.png"
     figure_credit: "Example from our EEG–fNIRS foundation model (Computers in Biology and Medicine, 2025), © the respective publisher."
     keywords:
@@ -19,10 +16,7 @@ en:
   - id: multimodal
     title: "Multimodal and Cross-Modality Learning"
     summary: >-
-      Different modalities carry complementary evidence, and in practice some of
-      them are missing. We study how to fuse image, signal, and text together,
-      and how to translate one modality into another when acquiring it is
-      expensive or impossible.
+      Fusing image, signal, and text together, and translating one modality into another when acquiring it is expensive or impossible.
     figure: "/assets/img/research/spine.png"
     figure_credit: "Example from our PET/MR synthesis work (The Spine Journal, 2024), © the respective publisher."
     keywords:
@@ -34,10 +28,7 @@ en:
   - id: generative
     title: "Generative Models for Medical Data"
     summary: >-
-      Generative models let us synthesise data under stated conditions, model
-      how a disease progresses, and share realistic data without exposing
-      patients. We work on diffusion models and GANs with explicit control over
-      anatomy and clinical condition.
+      Diffusion models and GANs with explicit control over anatomy and clinical condition — for synthesis, disease progression, and privacy-preserving sharing.
     figure: "/assets/img/research/pattern_recognition.png"
     figure_credit: "Example from our conditional GAN work on Alzheimer's progression (Pattern Recognition, 2023), © the respective publisher."
     keywords:
@@ -49,10 +40,7 @@ en:
   - id: label-efficient
     title: "Label-Efficient and Robust Learning"
     summary: >-
-      Medical labels are scarce, expensive, and often subjective — and a model
-      that works at one hospital frequently fails at the next. We study learning
-      under weak, noisy, or shifting supervision so that accuracy survives the
-      move to a new site, a new scanner, or a new patient.
+      Learning under weak, noisy, or shifting supervision, so that accuracy survives a new site, a new scanner, or a new patient.
     figure: "/assets/img/research/tnsre.png"
     figure_credit: "Example from our EEG-based pain assessment work (IEEE TNSRE, 2026), © the respective publisher."
     keywords:
@@ -64,9 +52,7 @@ en:
   - id: clinical-ai
     title: "Trustworthy Clinical AI"
     summary: >-
-      A model is only useful in the clinic if a clinician can tell when to rely
-      on it. We work on interpretability, calibrated uncertainty, and evaluation
-      protocols that reflect how a system will actually be used.
+      Interpretability, calibrated uncertainty, and evaluation protocols that reflect how a system will actually be used in the clinic.
     keywords:
       - "Interpretability"
       - "Uncertainty estimation"
@@ -77,9 +63,7 @@ ko:
   - id: foundation-models
     title: "의료 파운데이션 모델"
     summary: >-
-      병원에는 레이블이 달린 데이터보다 달리지 않은 데이터가 훨씬 많이 쌓입니다.
-      영상·생체신호·임상텍스트를 아우르는 대규모 비레이블 데이터로 사전학습해,
-      적은 레이블만으로 downstream 과제에 옮겨 쓸 수 있는 표현을 학습합니다.
+      영상·생체신호·임상텍스트로 이루어진 대규모 비레이블 데이터로 사전학습해, 적은 레이블만으로 downstream 과제에 옮겨 쓸 수 있는 표현을 학습합니다.
     figure: "/assets/img/research/cibm.png"
     figure_credit: "예시: 본 연구실의 EEG–fNIRS 파운데이션 모델 (Computers in Biology and Medicine, 2025), © 해당 출판사."
     keywords:
@@ -91,9 +75,7 @@ ko:
   - id: multimodal
     title: "멀티모달·모달리티 간 학습"
     summary: >-
-      모달리티마다 담고 있는 정보가 다르고, 실제 현장에서는 그중 일부가 빠져 있습니다.
-      영상·신호·텍스트를 함께 융합하는 방법과, 촬영 비용이 크거나 아예 얻을 수 없는
-      모달리티를 다른 모달리티에서 생성해내는 방법을 연구합니다.
+      영상·신호·텍스트를 함께 융합하는 방법과, 얻기 어렵거나 촬영 비용이 큰 모달리티를 다른 모달리티에서 생성해내는 방법을 연구합니다.
     figure: "/assets/img/research/spine.png"
     figure_credit: "예시: 본 연구실의 PET/MR 합성 연구 (The Spine Journal, 2024), © 해당 출판사."
     keywords:
@@ -105,9 +87,7 @@ ko:
   - id: generative
     title: "의료 데이터 생성 모델"
     summary: >-
-      생성 모델을 쓰면 원하는 조건에 맞는 데이터를 만들고, 질환의 진행을 모델링하고,
-      환자 정보를 노출하지 않으면서 현실적인 데이터를 공유할 수 있습니다.
-      해부학적 구조와 임상 조건을 명시적으로 통제하는 diffusion·GAN을 다룹니다.
+      해부학적 구조와 임상 조건을 명시적으로 통제하는 diffusion·GAN으로 데이터 합성, 질환 진행 모델링, 프라이버시 보존 공유를 다룹니다.
     figure: "/assets/img/research/pattern_recognition.png"
     figure_credit: "예시: 본 연구실의 알츠하이머 진행 조건부 GAN 연구 (Pattern Recognition, 2023), © 해당 출판사."
     keywords:
@@ -119,9 +99,7 @@ ko:
   - id: label-efficient
     title: "레이블 효율·강건 학습"
     summary: >-
-      의료 레이블은 적고, 비싸고, 주관적입니다. 게다가 한 병원에서 잘 되던 모델이
-      다음 병원에서는 무너지는 일이 흔합니다. 약하거나 잡음이 섞이거나 분포가 바뀌는
-      감독 신호 아래에서도 성능이 유지되는 학습 방법을 연구합니다.
+      약하거나 잡음이 섞이거나 분포가 바뀌는 감독 신호 아래에서도, 다른 기관·장비·환자로 옮겨갔을 때 성능이 유지되는 학습을 연구합니다.
     figure: "/assets/img/research/tnsre.png"
     figure_credit: "예시: 본 연구실의 뇌파 기반 통증 평가 연구 (IEEE TNSRE, 2026), © 해당 출판사."
     keywords:
@@ -133,9 +111,7 @@ ko:
   - id: clinical-ai
     title: "신뢰할 수 있는 임상 AI"
     summary: >-
-      임상에서 쓸모 있으려면 의료진이 언제 그 모델을 믿어도 되는지 판단할 수 있어야
-      합니다. 해석 가능성, 보정된 불확실성, 그리고 실제 사용 방식을 반영한 평가
-      프로토콜을 함께 연구합니다.
+      해석 가능성, 보정된 불확실성, 그리고 실제 임상 사용 방식을 반영한 평가 프로토콜을 연구합니다.
     keywords:
       - "해석 가능성"
       - "불확실성 추정"
