@@ -22,7 +22,7 @@
     <li>
       <span class="pub-badge">{{ p.abbr }}</span>
       <div class="pub-body">
-        <span class="pub-title">{{ p.title }}</span>
+        <span class="pub-title">{{ p.title | replace: "--", "–" }}</span>
         <div class="pub-authors">
           {%- for a in p.authors -%}
             {%- if a.last == "Jung" and a.first == "Euijin" -%}
@@ -34,7 +34,7 @@
           {%- endfor -%}
         </div>
         <div class="pub-venue">
-          {{- p.venue -}}
+          {{- p.venue | replace: "--", "–" -}}
           {%- if p.volume and p.volume != "" %}, {{ p.volume }}
             {%- if p.number and p.number != "" %}({{ p.number }}){% endif -%}
           {%- endif -%}
