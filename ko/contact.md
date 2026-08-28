@@ -9,9 +9,6 @@ description: "MILE Lab 연락처 — 이메일, 영남대학교 IT관 223호 위
 {%- assign L = site.data.i18n[page.lang] -%}
 
 <section class="section">
-  <p class="welcome-note">
-    학부연구생과 대학원 진학을 고민하는 분들의 연락을 환영합니다.
-  </p>
   <dl class="dl-grid">
     <dt>{{ L.email }}</dt>
     <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>

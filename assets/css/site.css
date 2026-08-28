@@ -390,7 +390,6 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
 .course-list.plain .course-title { color: var(--fg-strong); font-weight: 600; font-size: 1.02rem; }
 
 /* ===== 연락처: 지도 =========================================== */
-.welcome-note { margin: 0 0 22px; font-size: 1.02rem; color: var(--fg); }
 .map-embed {
   position: relative; width: 100%; aspect-ratio: 16 / 9;
   border: 1px solid var(--line); border-radius: var(--radius);

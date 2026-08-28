@@ -9,9 +9,6 @@ description: "Contact MILE Lab — email, office in Room 223 of the IT Building,
 {%- assign L = site.data.i18n[page.lang] -%}
 
 <section class="section">
-  <p class="welcome-note">
-    Enquiries from prospective undergraduate researchers and graduate students are welcome.
-  </p>
   <dl class="dl-grid">
     <dt>{{ L.email }}</dt>
     <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
