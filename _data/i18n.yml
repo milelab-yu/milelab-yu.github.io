@@ -12,7 +12,7 @@ en:
   yu: "Yeungnam University"
   yu_url: "https://www.yu.ac.kr/main/en/"
   dept: "School of Computer Science and Engineering, Yeungnam University"
-  dept_url: "https://cse.yu.ac.kr/"
+  dept_url: "https://www.yu.ac.kr/computer/index.do"
   address: "Room 223, IT Building, Yeungnam University 280 Daehak-ro, Gyeongsan-si, Gyeongsangbuk-do 38541, Republic of Korea"
   # UI
   menu: "Menu"
@@ -90,7 +90,7 @@ ko:
   yu: "영남대학교"
   yu_url: "https://www.yu.ac.kr/"
   dept: "영남대학교 컴퓨터학부"
-  dept_url: "https://cse.yu.ac.kr/"
+  dept_url: "https://www.yu.ac.kr/computer/index.do"
   address: "경상북도 경산시 대학로 280 영남대학교 IT관 223호 (38541)"
   # UI
   menu: "메뉴"
