@@ -417,3 +417,9 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
 .bio-text { margin: 0 0 0.9em; }
 .bio-text:last-child { margin-bottom: 0; }
 @media (max-width: 520px) { .career-inline li { flex-direction: column; gap: 0; } .career-inline .when { flex: none; font-size: 0.82rem; } }
+
+/* 히어로 안의 소제목 */
+.hero-heading {
+  margin: 26px 0 8px; font-size: 1.05rem; font-weight: 700;
+  letter-spacing: 0.01em; color: var(--fg-strong);
+}

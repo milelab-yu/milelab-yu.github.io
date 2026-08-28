@@ -11,26 +11,12 @@ description: "Medical Intelligence & Learning Lab at Yeungnam University — fou
 <section class="hero">
   <div class="wrap">
     <h1 class="tagline">Toward <span class="accent">general medical intelligence</span> across multi-modality</h1>
+    <h2 class="hero-heading">{{ L.about_us }}</h2>
     <p class="tagline-note">{{ L.tagline_note }}</p>
   </div>
 </section>
 
 <div class="wrap">
-
-  <section class="section">
-    <h2>{{ L.about_us }}</h2>
-    <p>
-      MILE Lab is part of the
-      <a href="{{ L.dept_url }}" target="_blank" rel="noopener">School of Computer Science and Engineering</a>
-      at Yeungnam University. We work on machine learning for medical data in all
-      its forms — images, biosignals, and clinical text — spanning representation
-      learning, generative modelling, multimodal fusion, and learning under weak
-      or shifting supervision.
-    </p>
-    <p>
-      The lab opened in 2026 and is recruiting its first students.
-    </p>
-  </section>
 
   {%- assign areas = site.data.research.en -%}
   {%- if areas and areas.size > 0 %}
