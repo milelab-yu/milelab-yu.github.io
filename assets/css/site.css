@@ -449,3 +449,19 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
 .research-head h2 { margin: 0; font-size: 1.22rem; }
 .research-section .kw { margin-bottom: 18px; }
 .research-section .figure { margin: 0; }
+
+/* ===== 헤더 워드마크 이미지 ============================================= */
+.lab-mark .wordmark { height: 30px; width: auto; display: block; margin-bottom: 3px; }
+.lab-mark .wm-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .lab-mark .wm-light { display: none; }
+  :root:not([data-theme="light"]) .lab-mark .wm-dark { display: block; }
+}
+:root[data-theme="dark"] .lab-mark .wm-light { display: none; }
+:root[data-theme="dark"] .lab-mark .wm-dark { display: block; }
+:root[data-theme="light"] .lab-mark .wm-light { display: block; }
+:root[data-theme="light"] .lab-mark .wm-dark { display: none; }
+@media (max-width: 620px) {
+  .lab-mark .wordmark { height: 24px; }
+  .lab-mark .mark-box { width: 36px; flex-basis: 36px; }
+}

@@ -25,10 +25,13 @@
 
   <div class="lab-mark">
     <div class="wrap">
-      <a class="lockup" href="{{ L.home_url | relative_url }}">
+      <a class="lockup" href="{{ L.home_url | relative_url }}" aria-label="{{ L.lab_name }} — {{ L.lab_full_plain }}">
         <span class="mark-box">{% include partials/mark.html %}</span>
         <span class="lockup-text">
-          <span class="lab-name">{{ L.lab_name }}</span>
+          <img class="wordmark wm-light" src="{{ '/assets/logo/mile-wordmark.png' | relative_url }}"
+               alt="{{ L.lab_name }}" width="1113" height="246">
+          <img class="wordmark wm-dark" src="{{ '/assets/logo/mile-wordmark-light.png' | relative_url }}"
+               alt="" aria-hidden="true" width="1113" height="246">
           <span class="lab-full">{{ L.lab_full }}</span>
         </span>
       </a>
