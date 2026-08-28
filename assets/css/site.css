@@ -136,7 +136,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 /* 랩 마크 */
 .lab-mark .wrap { display: flex; align-items: center; gap: 16px; padding-top: 18px; padding-bottom: 16px; }
 .lab-mark a.lockup { display: flex; align-items: center; gap: 16px; text-decoration: none; color: inherit; }
-.lab-mark .mark-box { width: 46px; flex: 0 0 46px; }
+.lab-mark .mark-box { width: 55px; flex: 0 0 55px; }
 .lab-name { display: block; font-size: 1.4rem; font-weight: 800; color: var(--fg-strong); letter-spacing: -0.01em; }
 .lab-full { display: block; font-size: 0.8rem; color: var(--muted); margin-top: 1px; }
 
@@ -463,5 +463,5 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
 :root[data-theme="light"] .lab-mark .wm-dark { display: none; }
 @media (max-width: 620px) {
   .lab-mark .wordmark { height: 24px; }
-  .lab-mark .mark-box { width: 36px; flex-basis: 36px; }
+  .lab-mark .mark-box { width: 44px; flex-basis: 44px; }
 }
