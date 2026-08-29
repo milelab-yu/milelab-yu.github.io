@@ -21,9 +21,9 @@ en:
       - when: "2026 –"
         what: "Assistant Professor, School of Computer Science and Engineering, Yeungnam University"
       - when: "2023 – 2026"
-        what: "Postdoctoral Researcher, Division of Intelligent Robot, DGIST"
+        what: "Postdoctoral Researcher, Division of Intelligent Robot, DGIST (PI: Prof. Jinung An)"
       - when: "2023"
-        what: "Ph.D., DGIST"
+        what: "Ph.D., DGIST (Advisor: Prof. Sang Hyun Park)"
     links:
       scholar: "https://scholar.google.com/citations?user=-rAfX9kAAAAJ"
   members: []
@@ -47,9 +47,9 @@ ko:
       - when: "2026 –"
         what: "영남대학교 컴퓨터학부 조교수"
       - when: "2023 – 2026"
-        what: "DGIST 지능형로봇연구부 박사후연구원"
+        what: "DGIST 지능형로봇연구부 박사후연구원 (연구책임자: 안진웅 교수)"
       - when: "2023"
-        what: "DGIST 박사"
+        what: "DGIST 박사학위 (지도교수: 박상현 교수)"
     links:
       scholar: "https://scholar.google.com/citations?user=-rAfX9kAAAAJ"
   members: []
