@@ -11,12 +11,12 @@ en:
     photo_alt: "Euijin Jung"
     bio:
       - >-
-        I am an Assistant Professor in the School of Computer Science and Engineering
-        at Yeungnam University, where I lead MILE Lab. Before this, I spent three years
-        as a Postdoctoral Researcher in the Division of Intelligent Robot at DGIST
-        working with Prof. Jinung An (8/2023–2026). I obtained my Ph.D. from DGIST in
-        2023 under the supervision of Prof. Sang Hyun Park, my M.S. from DGIST in 2019,
-        and my B.S. from Korea University of Technology and Education.
+        I work on machine learning across medical images, biosignals, and clinical
+        text, with an interest in representations that still hold when labels are
+        scarce or the site and the subject change. I received my Ph.D. from DGIST in
+        2023, stayed on as a postdoctoral researcher in the Division of Intelligent
+        Robot, and joined the School of Computer Science and Engineering at Yeungnam
+        University in 2026.
     career:
       - when: "2026 –"
         what: "Assistant Professor, School of Computer Science and Engineering, Yeungnam University"
@@ -39,11 +39,10 @@ ko:
     photo_alt: "정의진"
     bio:
       - >-
-        영남대학교 컴퓨터학부 조교수로 재직하며 MILE Lab을 이끌고 있습니다. 그 전에는
-        DGIST 지능형로봇연구부에서 안진웅 교수님과 함께 3년간 박사후연구원으로
-        일했습니다(2023.08–2026). 2023년 DGIST에서 박상현 교수님 지도로 박사학위를,
-        2019년 같은 대학에서 석사학위를 받았고, 학사는 한국기술교육대학교에서
-        마쳤습니다.
+        의료영상·생체신호·임상텍스트를 아우르는 기계학습을 연구합니다. 레이블이
+        부족하거나 기관·피험자가 바뀌어도 성립하는 표현을 학습하는 데 관심이 있습니다.
+        2023년 DGIST에서 박사학위를 받고 같은 기관 지능형로봇연구부에서 박사후연구원을
+        거쳐 2026년 영남대학교 컴퓨터학부에 부임했습니다.
     career:
       - when: "2026 –"
         what: "영남대학교 컴퓨터학부 조교수"
