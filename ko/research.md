@@ -25,8 +25,10 @@ intro: "의료영상·생체신호·임상텍스트를 아우르는 기계학습
   </ul>
   {%- endif %}
   {%- if a.figure %}
-  <figure class="figure">
-    <img src="{{ a.figure | relative_url }}" alt="{{ a.title }}" loading="lazy">
+  <figure class="figure figure-sm">
+    <a href="{{ a.figure | relative_url }}" target="_blank" rel="noopener">
+      <img src="{{ a.figure | relative_url }}" alt="{{ a.title }}" loading="lazy">
+    </a>
     <figcaption>{{ a.figure_credit }}</figcaption>
   </figure>
   {%- endif %}

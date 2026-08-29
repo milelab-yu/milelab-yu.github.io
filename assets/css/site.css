@@ -465,3 +465,8 @@ h1.tagline { margin: 0 0 14px; font-weight: 700; }
   .lab-mark .wordmark { height: 24px; }
   .lab-mark .mark-box { width: 44px; flex-basis: 44px; }
 }
+
+/* 연구 페이지 그림: 폭 50% (면적 기준 1/4). 클릭하면 원본 크기로 열린다. */
+.figure-sm { max-width: 50%; }
+.figure-sm a { display: block; }
+@media (max-width: 760px) { .figure-sm { max-width: 100%; } }

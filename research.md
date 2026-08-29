@@ -25,8 +25,10 @@ intro: "Machine learning across medical images, biosignals, and clinical text."
   </ul>
   {%- endif %}
   {%- if a.figure %}
-  <figure class="figure">
-    <img src="{{ a.figure | relative_url }}" alt="{{ a.title }}" loading="lazy">
+  <figure class="figure figure-sm">
+    <a href="{{ a.figure | relative_url }}" target="_blank" rel="noopener">
+      <img src="{{ a.figure | relative_url }}" alt="{{ a.title }}" loading="lazy">
+    </a>
     <figcaption>{{ a.figure_credit }}</figcaption>
   </figure>
   {%- endif %}
