@@ -26,7 +26,14 @@ en:
         what: "Ph.D., DGIST (Advisor: Prof. Sang Hyun Park)"
     links:
       scholar: "https://scholar.google.com/citations?user=-rAfX9kAAAAJ"
-  members: []
+  members:
+    - name: "박건령"
+      role: "Undergraduate researcher"
+      photo: "/assets/img/people/park_geonryeong.jpg"
+      email: "rjsfud7467@yu.ac.kr"
+      interests: "Computer Vision, AI, Anomaly Detection"
+      office: "Room 207, IT Building"
+      joined: "2026-09-18"
   alumni: []
 
 ko:
@@ -52,5 +59,12 @@ ko:
         what: "DGIST 박사학위 (지도교수: 박상현 교수)"
     links:
       scholar: "https://scholar.google.com/citations?user=-rAfX9kAAAAJ"
-  members: []
+  members:
+    - name: "박건령"
+      role: "학부연구원"
+      photo: "/assets/img/people/park_geonryeong.jpg"
+      email: "rjsfud7467@yu.ac.kr"
+      interests: "Computer Vision, AI, Anomaly Detection"
+      office: "IT관 207호"
+      joined: "2026-09-18"
   alumni: []

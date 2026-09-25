@@ -12,13 +12,15 @@ description: "MILE Lab 랩 멤버. 2026년 개설되었으며 첫 학생을 모�
 
 <section class="section">
   {%- if M.members and M.members.size > 0 %}
-  <div class="grid cols-3">
+  <div class="grid cols-3 members-grid">
     {%- for m in M.members %}
     <article class="card">
       {%- if m.photo %}<img class="member-photo" src="{{ m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy">{% endif %}
       {%- if m.role %}<p class="kicker">{{ m.role }}</p>{% endif %}
       <h3>{{ m.name }}</h3>
       {%- if m.note %}<p>{{ m.note }}</p>{% endif %}
+      {%- if m.interests %}<p class="member-meta"><span class="label">{{ L.research_interests }}</span> {{ m.interests }}</p>{% endif %}
+      {%- if m.office %}<p class="member-meta"><span class="label">{{ L.office }}</span> {{ m.office }}</p>{% endif %}
       {%- if m.email %}<p><a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
     </article>
     {%- endfor %}
