@@ -4,7 +4,7 @@ en:
   lab_name: "MILE Lab @ YU"
   lab_full: "Medical Intelligence &amp; Learning Lab"
   lab_full_plain: "Medical Intelligence & Learning Lab"
-  tagline: "Toward general medical intelligence across multi-modality"
+  tagline: "Toward general artificial intelligence across multi-modality"
   tagline_note: >-
     We aim for artificial intelligence that is general enough to be used broadly,
     built across the many modalities of medical and general data — images,
@@ -83,7 +83,7 @@ ko:
   lab_name: "MILE Lab @ YU"
   lab_full: "의료지능·학습 연구실"
   lab_full_plain: "의료지능·학습 연구실"
-  tagline: "멀티모달리티를 아우르는 범용 의료 지능을 향하여"
+  tagline: "멀티모달리티를 아우르는 범용 인공 지능을 향하여"
   tagline_note: >-
     영상·생체신호·텍스트 등 의료 및 일반 데이터의 여러 모달리티를 기반으로
     범용적으로 사용 가능한 인공지능 연구를 목표로 합니다.
