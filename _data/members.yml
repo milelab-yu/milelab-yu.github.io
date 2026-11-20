@@ -27,6 +27,13 @@ en:
       interests: "Computer Vision, AI, Anomaly Detection"
       office: "Room 207, IT Building"
       joined: "2026-09-18"
+    - name: "이승민"
+      role: "Undergraduate researcher"
+      photo: "/assets/img/people/lee_seungmin.jpg"
+      email: "dinnow123@gmail.com"
+      interests: "AI, Medical Image, BCI"
+      office: "Room 207, IT Building"
+      joined: "2026-11-13"
   alumni: []
 
 ko:
@@ -55,4 +62,11 @@ ko:
       interests: "Computer Vision, AI, Anomaly Detection"
       office: "IT관 207호"
       joined: "2026-09-18"
+    - name: "이승민"
+      role: "학부연구원"
+      photo: "/assets/img/people/lee_seungmin.jpg"
+      email: "dinnow123@gmail.com"
+      interests: "AI, Medical Image, BCI"
+      office: "IT관 207호"
+      joined: "2026-11-13"
   alumni: []

@@ -1,6 +1,12 @@
 # 연구실 소식. 최신순 정렬. date는 "YYYY-MM-DD" 문자열로 고정한다.
 # 항목 필드: date, title, body, link(선택), link_label(선택)
 en:
+  - date: "2026-11-13"
+    title: "이승민 joins the lab as an undergraduate researcher"
+    body: >-
+      이승민 (School of Computer Science and Engineering, Yeungnam University)
+      joined MILE Lab as an undergraduate researcher. Welcome!
+
   - date: "2026-09-18"
     title: "박건령 joins the lab as an undergraduate researcher"
     body: >-
@@ -35,6 +41,12 @@ en:
     link_label: "The Korea Economic Daily (in Korean)"
 
 ko:
+  - date: "2026-11-13"
+    title: "이승민 학부연구원 연구실 합류"
+    body: >-
+      영남대학교 컴퓨터학부 이승민 학생이 학부연구원으로 MILE Lab에 합류했습니다.
+      환영합니다.
+
   - date: "2026-09-18"
     title: "박건령 학부연구원 연구실 합류"
     body: >-
